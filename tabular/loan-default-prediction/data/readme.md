@@ -19,3 +19,9 @@
 **derogatory_public_records** = `Number of derogatory public records`<br>
 **revolving_line_utilization_rate** = `Revolving line utilization rate, or the amount of credit the borrower is using relative to all available revolving credit.`<br>
 **total_credit_lines** = `The total number of credit lines currently in the borrower's credit file`
+
+
+| Column 1       | Column 2     | Column 3     |
+| :------------- | :----------: | -----------: |
+|  Cell Contents | More Stuff   | And Again    |
+| You Can Also   | Put Pipes In | Like this \| |
