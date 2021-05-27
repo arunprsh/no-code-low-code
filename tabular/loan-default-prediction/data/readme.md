@@ -1,6 +1,6 @@
 | Name       | Description     | 
 | :------------- | :---------- | 
-|`**loan_status**`|Current status of the loan|
+|**loan_status**|Current status of the loan|
 |`loan_amount`|The listed amount of the loan applied for by the borrower. If at some point in time, the credit department reduces the loan amount, then it will be reflected in this value.| 
 |funded_amount_by_investors| The total amount committed by investors for that loan at that point in time.| 
 |term|The number of payments on the loan. Values are in months and can be either 36 or 60.|
