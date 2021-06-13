@@ -16,3 +16,22 @@ In `ELECTRA`, instead of masking the input, the approach corrupts it by replacin
 
 #### SageMaker Jumpstart
 `Amazon SageMaker JumpStart` is a capability of Amazon SageMaker that accelerates your machine learning workflows with one-click access to popular model collections (also known as **model zoos**), and to end-to-end solutions that solve common use cases.
+
+#### Downstream Task
+Multi-class Classification 
+
+#### List of pre-trained language models available for fine-tuning:
+* BERT Base Uncased
+* BERT Base Cased
+* BERT Base Multilingual Cased
+* BERT Base MEDLINE/PubMed
+
+* BERT Large Cased
+* BERT Large Cased Whole Word Masking
+* BERT Large Uncased Whole Word Masking
+
+* ELECTRA-Base++
+
+* ELECTRA-Small++
+
+
