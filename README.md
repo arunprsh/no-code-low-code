@@ -27,7 +27,7 @@
     * Investment firms have to sift through an overwhelming amount of information, largely in the form of unstructured text data, about sectors and companies of interest on a daily basis. Financial sentiment analysis is one of the essential components in navigating the attention over such continuous flow of data.
 
 * **Dataset:**
-    * Financial Phrase Bank - The dataset contains the sentiments for financial news headlines from the perspective of a retail investor. The dataset contains two columns, **sentiment** (label) and **headline**. The sentiment can be **negative**, **neutral** or **positive**.
+    * Financial Phrase Bank - The dataset contains the sentiments for financial news headlines from the perspective of a retail investor. The dataset contains two columns, **label** (sentiment) and **headline**. The sentiment can be **negative**, **neutral** or **positive**.
 * **Experiment:**
     * SageMaker Jumpstart to train a multi-class sentiment classifier.
     * Fine-tune a pre-trained **ELECTRA-Small++** model on provided dataset.
