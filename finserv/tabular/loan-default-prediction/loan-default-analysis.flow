@@ -231,6 +231,27 @@
           "name": "default"
         }
       ]
+    },
+    {
+      "node_id": "008e5924-4a63-4677-93da-90b8c8afb5f5",
+      "type": "VISUALIZATION",
+      "operator": "sagemaker.visualizations.quick_model_0.1",
+      "parameters": {
+        "name": "Quick Model",
+        "label": "loan_status"
+      },
+      "inputs": [
+        {
+          "name": "df",
+          "node_id": "e9550eb3-68fd-4937-874c-35e840d3858f",
+          "output_name": "default"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "default"
+        }
+      ]
     }
   ]
 }
