@@ -14,6 +14,7 @@ Follow the steps below to onboard to Amazon SageMaker Studio using Quick Start.
     * SageMaker Studio is available in the following regions (https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html).
 * In the search bar, type *SageMaker* and  click on *Amazon SageMaker*.
     * [Image: ./img/image-1.png]
+    ![image info](./img/image-1.png)
 * Click on *Amazon SageMaker Studio* (first  option on the left pane).
     * [Image: ./img/image-2.png]
 * Click on *Quick start*.
