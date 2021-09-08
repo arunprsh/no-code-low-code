@@ -1,4 +1,4 @@
-Demo 4: SageMaker Jumpstart (Vision)
+## Demo 4: SageMaker Jumpstart (Vision)
 
 * **Image classification (fine-tuned)**
     * For this demo, we will be using SageMaker Jumpstart to fine-tune a ResNet computer vision model for image classification to identify satellite images of roof tops for damage after a hurricane. 
