@@ -6,7 +6,7 @@
     * Lending loans to ‘risky’ applicants is the largest source of financial loss (called credit loss). The credit loss is the amount of money lost by the lender when the borrower refuses to pay or runs away with the money owed. In other words, borrowers who default cause the largest amount of loss to the lenders.
 * **Dataset:** 
     * Lending Club Loan Dataset: The dataset contains complete loan data for all loans issued through the 2007–2011, including the current loan status and latest payment information.
-    * 10000 rows, 21 feature columns
+    * 39717 rows, 22 feature columns and 3 target labels.
 * **Experiment:**
     * SageMaker DataWrangler to prepare data (joins), perform exploratory data analysis (EDA) and feature engineering of feature columns.
     * SageMaker Autopilot to train and tune an optimal multi-class classifier.
