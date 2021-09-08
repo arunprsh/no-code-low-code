@@ -13,9 +13,9 @@ Follow the steps below to onboard to Amazon SageMaker Studio using Quick Start.
 * Open AWS console and switch to AWS region you  would like to use.
     * SageMaker Studio is available in the following regions (https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html).
 * In the search bar, type *SageMaker* and  click on *Amazon SageMaker*.
-    * [Image: image.png]
+    * [Image: ./img/image-1.png]
 * Click on *Amazon SageMaker Studio* (first  option on the left pane).
-    * [Image: image.png]
+    * [Image: ./img/image-2.png]
 * Click on *Quick start*.
 * Define *User name* as *sagemakeruser*  for example.
 * Select *Create a new role* under  Execution role.
