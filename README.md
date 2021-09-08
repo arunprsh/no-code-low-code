@@ -45,4 +45,6 @@ The Machine Learning (ML) journey requires continuous experimentation and rapid 
     * Fine-tune a pre-trained **ResNet18** CV model on provided dataset.
 * **Step by step instructions:**
     * Step by step instructions to execute this demo is documented here.
+    
+**Note:** If you are new to SageMaker Studio, instructions to get started with SageMaker Studio and setup this demo repository are provided here.
 
