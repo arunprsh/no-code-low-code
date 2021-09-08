@@ -14,7 +14,7 @@
     ![image](./img/image-2.png)
     * Once Data Wrangler is loaded, you should be able to see it under running instances and apps as shown below.
     ![image](./img/image-3.png)
-    * Next, git clone the no-code-low-code repository (https://github.com/arunprsh/no-code-low-code) to SageMaker Studio notebook.
+    * Next, git clone the no-code-low-code [repository](https://github.com/arunprsh/no-code-low-code) to SageMaker Studio notebook.
     * Start with [explore-dataset.ipynb](https://github.com/arunprsh/no-code-low-code/blob/main/finserv/tabular/loan-default-prediction/explore-data.ipynb) SageMaker Studio notebook.
         * Explore the dataset locally. 
         * Upload the datasets (CSV files) to an S3 location for consumption by SageMaker Data Wrangler later.
@@ -144,7 +144,7 @@
         * Export as a Python script.
         * Export to SageMaker Feature Store as a notebook.
     ![image](./img/image-44.png)
-    * The exported notebooks are self contained in the repo at this location (https://github.com/arunprsh/no-code-low-code/tree/main/finserv/tabular/loan-default-prediction).
+    * The exported notebooks are self contained in the repo at this [location](https://github.com/arunprsh/no-code-low-code/tree/main/finserv/tabular/loan-default-prediction).
 
 
 ## Demo 2: SageMaker Autopilot 
