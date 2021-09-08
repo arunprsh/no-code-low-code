@@ -1,4 +1,13 @@
-## Low Code/No Code: Representative use cases for Financial Services
+## Low Code/No Code: 
+Representative Use Cases:
+
+The Machine Learning (ML) journey requires continuous experimentation and rapid prototyping to be successful. In order to create highly accurate and performant models, data scientists have to first experiment with feature engineering, model selection and optimization techniques. These processes are traditionally time consuming and expensive. In this tech talk, data scientists will learn how the low-code / no-code capabilities found in Amazon SageMaker Data Wrangler, Autopilot and Jumpstart, make it easier to experiment faster and bring highly accurate models to production more quickly and efficiently.
+
+What you'll learn:
+
+Learn how to simplify the process of data preparation and feature engineering, and complete each step of the data preparation workflow
+Understand how to automatically build, train, and tune the best machine learning models based on your data, while allowing you to maintain full control and visibility
+Get started with ML easily and quickly using pre-built solutions for common use cases and open source models from popular model zoos
 
 ###  Demo I - Tabular (SageMaker DataWrangler + Autopilot)
 
@@ -17,7 +26,6 @@
 
 * **Use case: Sentiment Analysis for Financial News**
     * Investment firms have to sift through an overwhelming amount of information, largely in the form of unstructured text data, about sectors and companies of interest on a daily basis. Financial sentiment analysis is one of the essential components in navigating the attention over such continuous flow of data.
-
 * **Dataset:**
     * Financial Phrase Bank - The dataset contains the sentiments for financial news headlines from the perspective of a retail investor. The dataset contains two columns, **label** (sentiment) and **headline**. The sentiment can be **negative**, **neutral** or **positive**.
 * **Experiment:**
