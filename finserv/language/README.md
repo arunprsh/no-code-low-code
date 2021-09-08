@@ -3,7 +3,7 @@
 * **Text classification (pre-trained)**
     * For this demo, we will be using SageMaker Jumpstart to use one of its 100s of pre-trained language models directly for text-classification. 
     * You can also fine-tune these language models for various NLP downstream tasks like classification, summarization, question answering etc.
-    * For this demo,  we will be using Electra-small++ pre-trained model to classify FinancialPhraseBank dataset. This dataset contains sentiments for financial news headlines. We will use Electra model to directly classify the headlines into 3 labels.
+    * For this demo,  we will be using BERT Base Cased pre-trained model to classify FinancialPhraseBank dataset. This dataset contains sentiments for financial news headlines. We will use BERT model to directly classify the headlines into 3 labels.
     * Navigate to the Text models in the Jumpstart view of models.
     ![image](./img/image-1.png)
     * Clicking View all takes you to list of 106 text models that we currently support for NLP.
