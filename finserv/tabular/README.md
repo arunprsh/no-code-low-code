@@ -9,111 +9,111 @@
         * SnowFlake
 * **Importing datasets from a data source (S3) to Data Wrangler**
     * Initialize SageMaker Data Wrangler via SageMaker Studio UI.
-    * [Image: create-new-data-flow.png]
+    ![image](./img/image-1.png)
     * Takes a few minutes to load.
-    * [Image: wrangler-loading.png]
+    ![image](./img/image-2.png)
     * Once Data Wrangler is loaded, you should be able to see it under running instances and apps as shown below.
-    * [Image: dw-instance-running.png]
+    ![image](./img/image-3.png)
     * Next, git clone the no-code-low-code repository (https://github.com/arunprsh/no-code-low-code) to SageMaker Studio notebook.
     * Start with [explore-dataset.ipynb](https://github.com/arunprsh/no-code-low-code/blob/main/finserv/tabular/loan-default-prediction/explore-data.ipynb) SageMaker Studio notebook.
         * Explore the dataset locally. 
         * Upload the datasets (CSV files) to an S3 location for consumption by SageMaker Data Wrangler later.
         * Copy the S3 URLs of the loans part files to your clipboard. We will use these URLs later to import these part files into Data Wrangler and join them.
     * Once Data Wrangler is up and running, you can see the following data flow interface with options for import, creating data flows and export as shown below.
-    * [Image: import-data.png]
+    ![image](./img/image-4.png)
     * Make sure to rename the untitled.flow to your preference (for e.g., join.flow)
     * Paste the S3 URL for the loans-part-1.csv file into the search box below.
-    * [Image: choose-s3-location.png]
+    ![image](./img/image-5.png)
     * Paste the copied s3 URL of the loans-part-1.csv file into the search field as shown below and hit go.
-    * [Image: s3-chosen.png]
+    ![image](./img/image-6.png)
     * Select the CSV file from the drop down results. On the right pane, make sure sampling is enabled and COMMA is chosen as the delimiter. Hit *import* to import this dataset to Data Wrangler. *Note:* You can also see a preview of the dataset at the bottom half as shown below.
-    * [Image: go-clicked.png]
+    ![image](./img/image-7.png)
     * Once the dataset is imported, the Data flow interface looks as shown below.
-    * [Image: after-import.png]
+    ![image](./img/image-8.png)
 * Since currently you are in the data flow tab, hit the import tab (left of data flow tab) as seen in the above image. 
 * Import the second part file (loans-part-2.csv) following the same set of instructions as noted previously.
-    * [Image: part-2-imported.png]
+    ![image](./img/image-9.png)
 * *Joining datasets*
     * Given, we have imported both the part CSV files in the previous steps. Let us walk through on how to join these CSV files based on a common unique identifier column. 
     * Click on either part-1 or part-2 file transform block as show in the image below:
         * Here, we have selected part-2 transform block and hit Join.
-    * [Image: hit-join.png]
+    ![image](./img/image-10.png)
     * Select the other part file transform block and it automatically maps (converges) both the files into a Join preview as shown below.
     * *Note*: Files can also be concatenated similar to join operations. 
     * Hit configure.
-    * [Image: join-preview.png]
+    ![image](./img/image-11.png)
     * Here, choose a name for the resulting join file and choose the type of join and columns on to join.
-    * [Image: after-config.png]
+    ![image](./img/image-12.png)
     * Hit Apply. You can see a preview of the Joined dataset as shown in the image below.
-    * [Image: preview-join.png]
+    ![image](./img/image-13.png)
     * Hit *Add* at the upper right corner to add this Join transform to the original data flow.
     * At the end of this step, the data flow looks as shown below.
-    * [Image: join-done.png]
+    ![image](./img/image-14.png)
     * Let’s see now how to add a simple transform using Data Wrangler to drop the redundant ID columns after the JOIN operation we did previously.
     * Select on the loans.csv block and click the + icon - under which click on Add transform.
-    * [Image: Screen Shot 2021-09-02 at 12.29.58 PM.png]
+    ![image](./img/image-15.png)
     * This takes us to the Data Wrangler transformations interface where there are over 300+ transformations you can apply to your dataset. For now, let us apply the manage columns transform to drop the id columns (id_0 and id_1).
-    * [Image: transforms.png]
+    ![image](./img/image-16.png)
     * Select the manage columns drop down on the right pane and choose drop column and pick the column you want to drop as shown in the image below:
-    * [Image: drop.png]
+    ![image](./img/image-17.png)
     * Hit preview first and then add.
     * Repeat the step for column id_1.
     * Now hit back to data flow as shown in the image below:
-    * [Image: back-to-data.png]
+    ![image](./img/image-18.png)
     * You should now be able to see the 2 transforms (dropping the two ID columns) as shown below in the Data Flow interface.
-    * [Image: steps.png]
+    ![image](./img/image-19.png)
     * With this step, we have our joined dataset for loan default prediction ready to be explored and feature engineered which we will cover in the next steps.
-* *Exploratory Data Analysis:*
+* **Exploratory Data Analysis:**
     * Let’s start with a simple analysis to look into the descriptive statistics of our joined dataset.
     * Click the + symbol and choose Add analysis.
-    * [Image: analysis.png]
+    ![image](./img/image-20.png)
     * The analysis interface looks as shown below. There are 7 different types of analysis that can be performed. Let us choose Table Summary first to get some descriptive statistics about the data.
-    * [Image: analysis_ui.png]
+    ![image](./img/image-21.png)
     * Once Table Summary is chosen, give your analysis a name; let’s call it Descriptive Statistics and hit preview. The summary is shown as seen in the picture below. Save the analysis.
-    * [Image: stats-done.png]
+    ![image](./img/image-22.png)
     * Once the analysis is saved. The analysis is attached to a dashboard as shown below:
-    * [Image: save-analysis.png]
-* *Visualization:*
+    ![image](./img/image-23.png)
+* **Visualization:**
     * Now, let us click the Create new analysis button to start creating some visualizations on the data. 
         * You can either pick the list of visualizations that come pre-installed for you in Data Wrangler or bring in your own custom visualization using Altair.
         * Altair is a declarative statistical visualization library for Python and you can write your own analysis/ visualization code as shown below. 
-        * [Image: custom.png]
+        ![image](./img/image-24.png)
     * To create a visualization using options provided by default, let us choose *histogram* as the analysis type and fill in the details as shown in the image below. Hit Preview and Save the visualization to the analysis dashboard.
-    * [Image: hist.png]
+    ![image](./img/image-25.png)
     * After saving the visualization, the analysis dashboard should look like the image shown below.
-    * [Image: dash.png]
+    ![image](./img/image-26.png)
 * *Quick Model:*
     * Given, we now know how to create an analysis now, let us create a new analysis to train a quick model that will let us know how well our raw feature columns are ready for training an effective machine learning model for classification (loan default prediction)
     * Hit Create new analysis and choose Quick Model for analysis type and loan_status for Label. As you can see, the quick model was able to train a model with an f1 score of 0.75 on test set. 
     * The quick model also shows the feature attribution (importance).
-    * [Image: Screen Shot 2021-09-02 at 4.01.04 PM.png]
+    ![image](./img/image-27.png)
     * At the end of this analysis, the dashboard will look as shown below:
-    * [Image: dash2.png]
+    ![image](./img/image-28.png)
 * *Feature Engineering (Feature Transformations)*
     * As a next step, let us start creating a few transformations to kick start the feature engineering process. Data Wrangler comes pre-baked with over 300 transformations which you can easily apply to your raw feature columns. As part of this demo, let us apply a few transformations for numeric, categorical and a text column.
     * Click *Back to data flow*
-    * [Image: back.png]
+    ![image](./img/image-29.png)
     * Click + and choose Add transform as shown below.
-    * [Image: add transform.png]
+    ![image](./img/image-30.png)
     * For numeric columns, you can add a scaling transform as shown below. Here we are scaling the interest rate column using a Min-max scaler provided by Data Wrangler. We can similarly scale other numeric columns. 
-    * [Image: numeric.png]
+    ![image](./img/image-31.png)
     * You can pick various other scalers depending on your use case if needed.
-    * [Image: scale.png]
+    ![image](./img/image-32.png)
     * Next, let us see how we can transform a categorical feature column using Data Wrangler. 
     * For encoding categorical columns, Choose  *Encode Categorical* under the list of transformations and apply one-hot encode on the *purpose* column. 
     * You can also choose ordinal encoding if the categorical column is weighted.
-    * [Image: cat.png]
+    ![image](./img/image-33.png)
     * Next, we will see how to apply transformations on textual features. 
     * Column employer_title is a textual feature column in our dataset. We can vectorize this column by applying the count vectorizer and a standard tokenizer as shown in the image below. You can also bring in your own tokenizer if you wish.  Data Wrangler provided vectorizer is a tf-idf based vectorizer which lets you change and set attributes like max vocabulary size, min term frequency, min document frequency etc.
-    * [Image: Screen Shot 2021-09-03 at 12.34.30 PM.png]
+    ![image](./img/image-34.png)
     * So far, we have seen how to transform different types of feature columns (numeric, categorical and text) using Data Wrangler’s pre-baked transformations. There are over 300+ transformations you can choose from + you can also bring in your own custom transformations (as shown below).
-    * [Image: Screen Shot 2021-09-03 at 1.13.07 PM.png]
+    ![image](./img/image-35.png)
     * Given, we have applied 3 transformations: one for numeric, one for categorical and one for text, our dat flow interface should look like the image shown below.
-    * [Image: Screen Shot 2021-09-03 at 1.20.00 PM.png]
+    ![image](./img/image-36.png)
     * Now, as a next step, let us try adding an analysis (quick model) on the transformed model to see if it improved the performance or changed the feature attribution ranking.
 * *Evaluate feature transformations by re-building a Quick Model to track changes to feature attribution*
     * Click on the + symbol and choose Add analysis. Under analysis type, choose Quick Model and preview the results as shown in the image below.
-    * [Image: Screen Shot 2021-09-03 at 1.26.47 PM.png]
+    ![image](./img/image-37.png)
 
     * As you can see, we did not have any change to the f-score. But, we do see minor changes to the feature attribution ranking.
     * The more transformations we apply, the bigger these results can vary.
@@ -122,34 +122,34 @@
 * *Export transformed features to S3 (will be consumed by SageMaker Autopilot)*
     * To export the transformed dataset, first click on the + symbol and choose Add transform
     * This takes you to the data transform interface, here, click on the Export button as pointed out by the screen shot below.
-    * [Image: Screen Shot 2021-09-03 at 2.23.27 PM.png]
+    ![image](./img/image-38.png)
     * Click Export data, choose the S3 location where you want to save the transformed dataset. 
-    * [Image: Screen Shot 2021-09-03 at 2.28.31 PM.png]
+    ![image](./img/image-39.png)
     * Click Export data again. Within a few minutes, you should see the data being exported successfully as shown below. Follow the S3 uri to get to the part CSV file generated by Data Wrangler with all the applied transformations.
-    * [Image: Screen Shot 2021-09-03 at 2.30.06 PM.png]
-    * [Image: Screen Shot 2021-09-03 at 2.47.35 PM.png]
+    ![image](./img/image-40.png)
+    ![image](./img/image-41.png)
 * *Other ways to export the transformations and analysis*
     * The loan-default.flow file that we created initially captures all of the transformations, joins and analysis. 
     * In a way, this file allows us to capture and persist every step of our feature engineering journey into a static file.
     * The flow file can then be used to re-create the analysis and feature engineering steps via Data Wrangler. All you need to do is import the flow file to SageMaker Studio and click on it.
     * We saw previously, how to export transformed dataset into S3. Additionally, we can also export the analysis and transformations in many other formats.
     * To start exporting, click on the export tab which is right of the Data flow tab we are used to by now.
-    * [Image: Screen Shot 2021-09-03 at 2.50.20 PM.png]
+    ![image](./img/image-42.png)
     * Once in, you can choose until where you want to export the data preparation flow. E.g., we can just export the join output or export all the way from importing part files till that last block where we applied data transformations.
     * In the below image, we are selecting all the blocks (entire flow). Once selected, click the Export step in the top right corner of the interface.
-    * [Image: Screen Shot 2021-09-03 at 2.50.53 PM.png]
+    ![image](./img/image-43.png)
     * You can export the analysis and transforms in 4 different ways in addition to direct export to S3 which we saw previously.
         * Save to S3 as a SageMaker Processing job notebook.
         * Export as a SageMaker Pipeline notebook.
         * Export as a Python script.
         * Export to SageMaker Feature Store as a notebook.
-    * [Image: image]
+    ![image](./img/image-44.png)
     * The exported notebooks are self contained in the repo at this location (https://github.com/arunprsh/no-code-low-code/tree/main/finserv/tabular/loan-default-prediction).
 
 
-Demo 2: SageMaker Autopilot 
+## Demo 2: SageMaker Autopilot 
 
-* *Creating an Autopilot Experiment*
+* **Creating an Autopilot Experiment**
     * SageMaker Autopilot automatically creates feature engineering pipelines, selects algorithms suitable for the machine learning problem type, trains and tunes several candidate models, before arriving at an optimal model.
     * Steps carried out by Autopilot are as follows:
         * *Automatic data pre-processing and feature engineering*
