@@ -20,7 +20,7 @@
     * Financial Phrase Bank - The dataset contains the sentiments for financial news headlines from the perspective of a retail investor. The dataset contains two columns, **label** (sentiment) and **headline**. The sentiment can be **negative**, **neutral** or **positive**.
 * **Experiment:**
     * SageMaker Jumpstart to train a multi-class sentiment classifier.
-    * Use a pre-trained **ELECTRA-Small++** model directly on the provided dataset for classification.
+    * Use a pre-trained TensorFlow **BERT Base Cased** model directly on the provided dataset for classification.
 
 ### III. Vision (SageMaker Jumpstart)
 
