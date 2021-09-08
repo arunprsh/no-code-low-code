@@ -2,7 +2,7 @@
 
 The Machine Learning (ML) journey requires continuous experimentation and rapid prototyping to be successful. In order to create highly accurate and performant models, data scientists have to first experiment with feature engineering, model selection and optimization techniques. These processes are traditionally time consuming and expensive. In this tech talk, data scientists will learn how the low-code / no-code capabilities found in **Amazon SageMaker Data Wrangler**, **Autopilot** and **Jumpstart**, make it easier to experiment faster and bring highly accurate models to production more quickly and efficiently.
 
-## What you will learn:
+* **What you will learn:**
     * Learn how to simplify the process of data preparation and feature engineering, and complete each step of the data preparation workflow.
     * Understand how to automatically build, train, and tune the best machine learning models based on your data, while allowing you to maintain full control and visibility.
     * Get started with ML easily and quickly using pre-built solutions for common use cases and open source models from popular model zoos.
