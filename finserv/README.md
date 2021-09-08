@@ -1,4 +1,15 @@
-## Low Code/No Code: Representative use cases for Financial Services
+## Low Code/No Code
+
+The Machine Learning (ML) journey requires continuous experimentation and rapid prototyping to be successful. In order to create highly accurate and performant models, data scientists have to first experiment with feature engineering, model selection and optimization techniques. These processes are traditionally time consuming and expensive. In this tech talk, data scientists will learn how the low-code / no-code capabilities found in Amazon SageMaker Data Wrangler, Autopilot and Jumpstart, make it easier to experiment faster and bring highly accurate models to production more quickly and efficiently.
+
+## What you'll learn:
+
+Learn how to simplify the process of data preparation and feature engineering, and complete each step of the data preparation workflow
+Understand how to automatically build, train, and tune the best machine learning models based on your data, while allowing you to maintain full control and visibility
+Get started with ML easily and quickly using pre-built solutions for common use cases and open source models from popular model zoos
+
+
+## Representative Use Cases
 
 ###  I.  Tabular (SageMaker DataWrangler + Autopilot)
 
@@ -6,10 +17,13 @@
     * Lending loans to ‘risky’ applicants is the largest source of financial loss (called credit loss). The credit loss is the amount of money lost by the lender when the borrower refuses to pay or runs away with the money owed. In other words, borrowers who default cause the largest amount of loss to the lenders.
 * **Dataset:** 
     * Lending Club Loan Dataset: The dataset contains complete loan data for all loans issued through the 2007–2011, including the current loan status and latest payment information.
-    * 10000 rows, 21 feature columns
+    * 39717 rows, 22 feature columns and 3 target labels.
 * **Experiment:**
-    * SageMaker Autopilot to train and tune an optimal binary classifier.
     * SageMaker DataWrangler for exploratory data analysis (EDA) of feature columns.
+    * SageMaker Autopilot to train and tune an optimal binary classifier.
+* **Steps:**
+    * Step-by-step instructions to execute the demo for this use case can be here.
+    
 
 ### II. Vision (SageMaker Jumpstart)
 
@@ -20,6 +34,9 @@
 * **Experiment:**
     * SageMaker Jumpstart to train an image classification model.
     * Fine-tune a pre-trained **ResNet18** CV model on provided dataset.
+* **Steps:**
+    * Step-by-step instructions to execute the demo for this use case can be here.
+  
 
 ### III.  Language (SageMaker Jumpstart)
 
@@ -30,4 +47,6 @@
     * Financial Phrase Bank - The dataset contains the sentiments for financial news headlines from the perspective of a retail investor. The dataset contains two columns, **label** (sentiment) and **headline**. The sentiment can be **negative**, **neutral** or **positive**.
 * **Experiment:**
     * SageMaker Jumpstart to train a multi-class sentiment classifier.
-    * Fine-tune a pre-trained **ELECTRA-Small++** model on provided dataset.
+    * Fine-tune a pre-trained TensorFlow **BERT Base Cased** model on provided dataset.
+* **Steps:**
+    * Step-by-step instructions to execute the demo for this use case can be here.
