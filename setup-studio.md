@@ -13,31 +13,30 @@ Follow the steps below to onboard to Amazon SageMaker Studio using Quick Start.
 * Open AWS console and switch to AWS region you  would like to use.
     * SageMaker Studio is available in the following regions (https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html).
 * In the search bar, type *SageMaker* and  click on *Amazon SageMaker*.
-    * [Image: ./img/image-1.png]
-    ![image info](./img/image-1.png)
+    ![image](./img/image-1.png)
 * Click on *Amazon SageMaker Studio* (first  option on the left pane).
-    * [Image: ./img/image-2.png]
+    ![image](./img/image-2.png)
 * Click on *Quick start*.
 * Define *User name* as *sagemakeruser*  for example.
 * Select *Create a new role* under  Execution role.
-    * [Image: image.png]
+    ![image](./img/image-3.png)
 * Keep the defaults and click *Create Role*.
-    * [Image: image.png]
+    ![image](./img/image-4.png)
 * You will see that the role is successfully  created.
-    * [Image: image.png]
+    ![image](./img/image-5.png)
 
 You can see that the option *Enable Amazon SageMaker project templates and JumpStart for this account and Studio users* is enabled. Keep this default setting.
 
 * Choose the newly created role and click *Submit*.
-    * [Image: image.png]
+    ![image](./img/image-6.png)
 * The SageMaker Studio environment will stay in *Pending*  state for a few minutes.
-    * [Image: image.png]
+    ![image](./img/image-7.png)
 * After a few minutes, the state will transition  to *Ready*.
-    * [Image: image.png]
+    ![image](./img/image-8.png)
 * Once Amazon SageMaker Studio is ready then  click on *Open Studio*. The page can take 1 or 2 minutes to load when  you access SageMaker Studio for the first time.
-    * [Image: image.png]
+    ![image](./img/image-9.png)
 * You will be redirected to a new web tab that  looks like this:
-    * [Image: image.png]
+    ![image](./img/image-10.png)
 
 **Congratulations!** You have successfully created a SageMaker Studio domain.
  
@@ -45,7 +44,7 @@ You can see that the option *Enable Amazon SageMaker project templates and JumpS
 Downloading the content of the GitHub repository needed for the workshop 
 
 * In the SageMaker Studio *File*  menu, select **New** and then click on* *Terminal**.
-    * [Image: image.png]
+    ![image](./img/image-11.png)
 * In the terminal, type the following command:
     * $ git clone https://github.com/arunprsh/no-code-low-code.git
 * After cloning, you will have *no-code-low-code* folder created in *left panel* of the  studio.
