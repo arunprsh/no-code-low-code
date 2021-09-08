@@ -157,7 +157,7 @@
             * Provides statistical insights about columns in your dataset.
             * Automatically extracts information from non-numeric columns, such as date and time information from timestamps.
             * Automatically handles imbalance in data.
-            * Automatically creates 10 feature engineering (FE) pipelines most adapted to your problem. Those FE pipelines consist of FE transformations coming from both native Sklearn, and custom (https://github.com/aws/sagemaker-scikit-learn-extension) Sklearn-compatible FE transformations invented and open-sourced by Amazon. 
+            * Automatically creates 10 feature engineering (FE) pipelines most adapted to your problem. Those FE pipelines consist of FE transformations coming from both native Sklearn, and [custom](https://github.com/aws/sagemaker-scikit-learn-extension) Sklearn-compatible FE transformations invented and open-sourced by Amazon. 
         * *Automatic ML model selection*
             * Automatically infers the type of predictions that best suit your data, such as binary classification, multi-class classification, or regression
             * Explores high-performing algorithms such as gradient boosting decision tree, feedforward deep neural networks, and logistic regression, and trains and optimizes hundreds of models based on these algorithms to find the model that best fits your data.
@@ -175,10 +175,10 @@
             * Uses SageMaker Experiments behind the scenes to automatically capture data and model lineage for each of the candidate models trained during the process.
     * To create an auto-pilot experiment, we will be using the transformed dataset that we saved in the final step of Demo 1 using Data Wrangler into S3.
     * First, from the studio launcher, click on the + button for *New Autopilot experiment*.
-    * [Image: autopilot.png]
+    ![image](./img/image-45.png)
     * For the experiment settings, fill in the values as shown below in the following images.
-    * [Image: Screen Shot 2021-09-03 at 7.24.01 PM.png]
-    * [Image: Screen Shot 2021-09-03 at 7.25.36 PM.png]
+    ![image](./img/image-46.png)
+    ![image](./img/image-47.png)
     * You can tag an Autopilot experiment with key value pairs of information.
     * For input location, let us re-use the output location of the exported Data Wrangler dataset.
     * For output location of the autopilot experiment where autopilot will store the trained models and other artifacts, let us specify the same location as the input.
@@ -186,65 +186,65 @@
     * You can either set the problem type yourself (multi-class classification) or set it to *Auto* to let autopilot automatically identify the problem type based on the provided dataset.
     * Once we populate all the values, let us hit *Create Experiment* to kickoff the autopilot experiment.
     * Confirm that you want to deploy the best model as a SageMaker endpoint for real-time inference (shown below).
-    * [Image: Screen Shot 2021-09-03 at 8.14.15 PM.png]
+    ![image](./img/image-48.png)
     * Once we launch the experiment, we are taken to a newer interface (as shown below) to show the status of the different phases of the autopilot experiment.
-    * [Image: Screen Shot 2021-09-03 at 8.14.42 PM.png]
+    ![image](./img/image-49.png)
     * The experiment starts with the *Pre-processing* stage (shown below).
-    * [Image: Screen Shot 2021-09-03 at 8.15.21 PM.png]
+    ![image](./img/image-50.png)
     * At this stage, autopilot kicks off a processing job for validating and split the dataset.
     * You can go to the SageMaker AWS console and under processing you can see this job.
-    * [Image: Screen Shot 2021-09-04 at 12.20.17 PM.png]
+    ![image](./img/image-51.png)
     * You can also go to the CloudWatch logs of this processing job to get an high-level  understanding of what are the different steps that are being executed by Autopilot via this processing job.
-    * To know more about SageMaker Processing jobs. Take a look at this resource (https://sagemaker.readthedocs.io/en/stable/amazon_sagemaker_processing.html).
-    * [Image: Screen Shot 2021-09-04 at 12.29.41 PM.png]
+    * To know more about SageMaker Processing jobs. Take a look at this [resource](https://sagemaker.readthedocs.io/en/stable/amazon_sagemaker_processing.html).
+    ![image](./img/image-52.png)
     * Once the 1st processing job is complete, Autopilot enters the candidates generation stage, where it runs another processing job.
     * This processing job creates the different blueprints or recipes for the feature engineering as candidate pipelines.
-    * [Image: Screen Shot 2021-09-04 at 12.28.51 PM.png]
+    ![image](./img/image-53.png)
     * The CloudWatch logs of the 2nd processing jobs shows Autopilot creating the different feature engineering candidate pipelines.
-    * [Image: Screen Shot 2021-09-04 at 12.30.35 PM.png]
+    ![image](./img/image-54.png)
     * Once the candidates are generated, you can see two buttons enabled in the Autopilot experiment window. 
         * Open candidate generation notebook 
         * Open data exploration notebook
-    * Both of these notebooks are included in the repo here (https://github.com/arunprsh/no-code-low-code/tree/main/finserv/tabular/loan-default-prediction).
+    * Both of these notebooks are included in the repo [here](https://github.com/arunprsh/no-code-low-code/tree/main/finserv/tabular/loan-default-prediction).
     * In the next stage - *Feature Engineering*, Autopilot runs these feature engineering pipelines via SageMaker Training jobs.
-    * [Image: Screen Shot 2021-09-04 at 12.30.50 PM.png]
+    ![image](./img/image-55.png)
     * Navigate to SageMaker console and under training, you should be able to see the 10 feature engineering pipelines that are being executed by Autopilot.
-    * [Image: Screen Shot 2021-09-04 at 12.37.26 PM.png]
+    ![image](./img/image-56.png)
     * Once the feature engineering stage is completed. In the next stage - *Model* *Tuning*, Autopilot executes up to 250 training jobs. These jobs are created by combining a candidate feature engineering pipeline with a  selected algorithm and set of hyperparameters to tune.
     * See the candidate generation notebook in the repo to read through the feature engineering, algorithm selection and hyperparameter selection in detail.
-    * [Image: Screen Shot 2021-09-04 at 1.34.33 PM.png]
+    ![image](./img/image-57.png)
     * In the SageMaker console, you can see the hyperparameter tuning job and the 250 training jobs that it kicks off.
-    * [Image: Screen Shot 2021-09-04 at 2.01.51 PM.png]
-    * [Image: Screen Shot 2021-09-04 at 1.43.10 PM.png]
+    ![image](./img/image-58.png)
+    ![image](./img/image-59.png)
     * Every SageMaker training job is tracked as an Autopilot trial and ranked as per the objective metric (in this case accuracy) which we selected at the start of the experiment. The best model is at shown at the top (see image below). At the end of the Model Tuning phase, we should be able to see all of the 250 training jobs that was run and the obtained metric value.
     * Once the Tuning stage is complete, the best model is deployed as a SageMaker endpoint. We enabled this option at the start when we defined the configs for the Autopilot experiment.
-    * [Image: Screen Shot 2021-09-04 at 2.02.35 PM.png]
+    ![image](./img/image-60.png)
     * From the SageMaker console, you can see the deployed endpoint in service.
-    * [Image: Screen Shot 2021-09-04 at 3.37.18 PM.png]
-    * At the last stage, Autopilot generates explainability report generated via Amazon SageMaker Clarify (https://aws.amazon.com/sagemaker/clarify/), making it easier to understand and explain how the models make predictions. Explainability reports include feature importance values so you can understand how each attribute in your training data contributes to the predicted result as a percentage. The higher the percentage, the more strongly that feature impacts your model’s predictions. You can download the explainability report as a human readable file, view model properties including feature importance in SageMaker Studio, or access feature importance using the SageMaker Autopilot APIs (https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-reference.html).
-    * [Image: Screen Shot 2021-09-04 at 2.08.40 PM.png]
+    ![image](./img/image-61.png)
+    * At the last stage, Autopilot generates explainability report generated via [Amazon SageMaker Clarify](https://aws.amazon.com/sagemaker/clarify/), making it easier to understand and explain how the models make predictions. Explainability reports include feature importance values so you can understand how each attribute in your training data contributes to the predicted result as a percentage. The higher the percentage, the more strongly that feature impacts your model’s predictions. You can download the explainability report as a human readable file, view model properties including feature importance in SageMaker Studio, or access feature importance using the [SageMaker Autopilot APIs](https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-reference.html).
+    ![image](./img/image-62.png)
     * After all the stages are completed, the UI looks as shown in the figure below.
-    * [Image: Screen Shot 2021-09-04 at 2.23.15 PM.png]
+    ![image](./img/image-63.png)
     * You can also get to the previously run autopilot run experiments via the Experiments and trials option under SageMaker resources. Click on the triangle icon as pointed by the red arrow and choose Experiments and trials. 
     * Under experiments, choose the last run Autopilot experiment (pointed by the yellow arrow).
-    * [Image: Screen Shot 2021-09-04 at 2.23.34 PM.png]
+    ![image](./img/image-64.png)
     * To get to the results of the best optimal model, right click on the best model and choose Open in model details as shown below.
-    * [Image: best_model.png]
+    ![image](./img/image-65.png)
     * The results can be viewed in three tabs - Model explainability, Artifacts and Network. 
     * As you can see, XGBoost was the winning algorithm for the best model and the screenshot below shows model explainability (Feature Importance) results for the best model. Explainability results are only provided for the optimal model.
-    * [Image: model-explain.png]
+    ![image](./img/image-66.png)
     * You can also view all the artifacts and where they are persisted under the Artifacts tab.
-    * [Image: artifacts.png]
+    ![image](./img/image-67.png)
     * For models other than the best, you can view the following information. Note: explainability results are not shown for the secondary (non-winning) models.
-    * [Image: other-models.png]
+    ![image](./img/image-68.png)
     * To get to the deployed endpoint details for the best model, Click on the SageMaker resources icon, choose Endpoints and pick the endpoint that was deployed.
-    * [Image: ep.png]
+    ![image](./img/image-69.png)
 * Online Inference (Real-time)
-    * Code sample showing how to invoke the real-time endpoint for online inference with example payloads are contained here (https://github.com/arunprsh/no-code-low-code/blob/main/finserv/tabular/loan-default-prediction/real-time-inference.ipynb).
+    * Code sample showing how to invoke the real-time endpoint for online inference with example payloads are contained [here](https://github.com/arunprsh/no-code-low-code/blob/main/finserv/tabular/loan-default-prediction/real-time-inference.ipynb).
 * Offline Inference (Batch)
-    * Code sample showing how to kick off a SageMaker Batch Transform job for offline batch inference is contained in this notebook (https://github.com/arunprsh/no-code-low-code/blob/main/finserv/tabular/loan-default-prediction/batch-inference.ipynb).
-    * To know more about SageMaker Batch Transform, click here (https://docs.aws.amazon.com/sagemaker/latest/dg/batch-transform.html).
-* *Important pointers to note down:* 
+    * Code sample showing how to kick off a SageMaker Batch Transform job for offline batch inference is contained in this [notebook](https://github.com/arunprsh/no-code-low-code/blob/main/finserv/tabular/loan-default-prediction/batch-inference.ipynb).
+    * To know more about SageMaker Batch Transform, click [here](https://docs.aws.amazon.com/sagemaker/latest/dg/batch-transform.html).
+* **Important pointers to note down:**
     * You can also stop the Autopilot experiment after a certain number of trials (e.g. 20) instead of the default 250 max trials and still get results. By default, Autopilot tries to explore up to 250 trials with default settings. Suppose Autopilot starts consistently creating trials with an objective metric value greater than 0.90 accuracy (which is your desired goal) after the first 10 to 15 trials. You can click ‘Stop the experiment’ at this point for the purposes of this experiment.
     * For numeric feature columns, Autopilot doesn't interpret zeros as missing values and treats them as valid zero values. If they represent missing values then Autopilot should produce better results if you encode them as missing values by replacing them with an empty string. Generally, when using Autopilot, you should only impute missing values when you have some domain specific knowledge. It's usually better to leave missing values as missing values e.g., empty strings.
     * All operations (actions) performed in this demo via the SageMaker UI can be achieved using [SageMaker APIs](https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-reference.html).
