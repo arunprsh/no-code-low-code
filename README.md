@@ -46,5 +46,5 @@ The Machine Learning (ML) journey requires continuous experimentation and rapid 
 * **Step by step instructions:**
     * Step by step instructions to execute this demo is documented here.
     
-**Note:** If you are new to SageMaker Studio, instructions to get started with SageMaker Studio and setup this demo repository are provided here.
+**Note:** If you are new to SageMaker Studio, instructions to get started with SageMaker Studio and setup this demo repository are provided ![here](https://github.com/arunprsh/no-code-low-code/blob/main/setup-studio.md).
 
