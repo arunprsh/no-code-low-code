@@ -1,4 +1,4 @@
-## Demo 1: SageMaker Data Wrangler 
+## Demo I: SageMaker Data Wrangler 
 
 * **Pre-requisites:**
     * We need to ensure dataset (loan default prediction) for ML is uploaded to a data source. 
@@ -147,7 +147,7 @@
     * The exported notebooks are self contained in the repo at this [location](https://github.com/arunprsh/no-code-low-code/tree/main/finserv/tabular/loan-default-prediction).
 
 
-## Demo 2: SageMaker Autopilot 
+## Demo II: SageMaker Autopilot 
 
 * **Creating an Autopilot Experiment**
     * SageMaker Autopilot automatically creates feature engineering pipelines, selects algorithms suitable for the machine learning problem type, trains and tunes several candidate models, before arriving at an optimal model.

@@ -1,4 +1,4 @@
-## Demo 3: SageMaker JumpStart (Language)
+## Demo III: SageMaker JumpStart (Language)
 
 * **Text classification (pre-trained)**
     * For this demo, we will be using SageMaker Jumpstart to use one of its 100s of pre-trained language models directly for text-classification. 
