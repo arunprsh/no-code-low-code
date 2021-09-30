@@ -1,0 +1,10 @@
+{
+    "images": [
+        {"file_name": "1", "height": 0, "width": 0, "id": 1},
+        {"file_name": "2", "height": 0, "width": 0, "id": 2}
+    ],
+    "annotations": [
+        {"image_id": 1, "bbox": [0, 0, 0, 0], "category_id": "mask"},
+        {"image_id": 2, "bbox": [0, 0, 0, 0], "category_id": "mask"}
+    ]   
+}
