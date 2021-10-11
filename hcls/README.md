@@ -81,8 +81,9 @@ The Machine Learning (ML) journey requires continuous experimentation and rapid 
 
 ### Demo IV - Vision (SageMaker Jumpstart)
 
-* **Use case:** **Mask detection**
+* **Use case:** **Mask Detection**
     <p align="center"><img width="500" height="500" src="./img/image-3.png"></p>
+    
     * There are many solutions to prevent the spread of the COVID-19 virus and one of the most effective solutions is wearing a face mask. Almost everyone is wearing face masks at all times in public places during the coronavirus pandemic. This encourages us to explore face mask detection technology to monitor people wearing masks in public places. Most recent and advanced face mask detection approaches are designed using deep learning. In this demo, we will see how to use state-of-the-art object detection models from SageMaker Jumpstart like SSD MobileNet, EfficientNet, VGG16, ResNet etc. to fine-tune an object detection for our data set.
     
 * **Dataset:**
