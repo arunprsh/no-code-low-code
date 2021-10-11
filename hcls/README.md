@@ -74,7 +74,7 @@ The Machine Learning (ML) journey requires continuous experimentation and rapid 
 
 * **Experiment:**
     * SageMaker Jumpstart to train a multi-class classifier.
-    * Use a pre-trained TensorFlow **BERT** pre-trained on MEDLINE/PubMed** model directly on the provided dataset for classification.
+    * Use a pre-trained TensorFlow **BERT** pre-trained on **MEDLINE/PubMed** model directly on the provided dataset for classification.
 
 * **Step by step instructions:**
     * Step by step instructions to execute this demo is documented [here](https://github.com/arunprsh/no-code-low-code/blob/main/hcls/language/README.md).
