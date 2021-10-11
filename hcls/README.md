@@ -13,7 +13,7 @@ The Machine Learning (ML) journey requires continuous experimentation and rapid 
 ###  Demo I & II - Tabular (SageMaker DataWrangler + Autopilot)
 
 * **Use case:** **Predict Diabetic Patients' Hospital Readmission**
-    ![image](./img/image-1.jpeg)
+    <p align="center"><img width="500" height="500" src="./img/image-1.jpeg"></p>
     * Identify the factors that lead to the high readmission rate of diabetic patients within 30 days post discharge and correspondingly predict the high-risk diabetic-patients who are most likely to get readmitted within 30 days. 
     * Hospital readmission is an important contributor to total medical expenditures and is an emerging indicator of quality of care. Diabetes, similar to other chronic medical conditions, is associated with increased risk of hospital readmission. hospital readmission is a high-priority health care quality measure and target for cost reduction, particularly within 30 days of discharge. The burden of diabetes among hospitalized patients is substantial, growing, and costly, and readmissions contribute a significant portion of this burden. Reducing readmission rates among patients with diabetes has the potential to greatly reduce health care costs while simultaneously improving care.
     * It is estimated that 9.3% of the population in the United States have diabetes , 28% of which are undiagnosed. The 30-day readmission rate of diabetic patients is 14.4 to 22.7 % . Estimates of readmission rates beyond 30 days after hospital discharge are even higher, with over 26 % of diabetic patients being readmitted within 3 months and 30 % within 1 year. Costs associated with the hospitalization of diabetic patients in the USA were `$124` billion, of which an estimated `$25` billion was attributable to 30-day readmissions assuming a 20 % readmission rate. Therefore, reducing 30-day readmissions of patients with diabetes has the potential to greatly reduce healthcare costs while simultaneously improving care.
@@ -63,7 +63,7 @@ The Machine Learning (ML) journey requires continuous experimentation and rapid 
 ### Demo III - Language (SageMaker Jumpstart)
 
 * **Use case:** **Classify medical specialties based on transcription text**
-![image](./img/image-2.png)
+    <p align="center"><img width="500" height="500" src="./img/image-2.png"></p>
     * The medical subdomain (specialty) of a clinical note, such as cardiology or neurology, is a useful content-derived metadata for developing machine learning downstream applications. Clinical notes, in which the medical reports are mainly written in natural language, have been regarded as a powerful resource to solve different clinical questions by providing detailed patient conditions, the thinking process of clinical reasoning, and clinical inference, which usually cannot be obtained from the other components of the electronic health record (EHR) system (e.g., claims data or laboratory examinations). 
     * Automated document classification is generally helpful in further processing clinical documents to extract these kinds of data. As such, the massive generation of clinical notes and rapidly increasing adoption of EHR systems has caused automated document classification to become an important research field of clinical predictive analytics, to help leverage the utility of narrative clinical notes. In this demo, we will using state-of-the-art transformer-based language models like **BERT** pre-trained on **MEDLINE/PubMed** data to design a custom specialty classifier for our use case.
     * In order to learn the custom knowledge instilled by our corpus (transcripts), we fine-tune the BERT model with our data specifically for the downstream task of classification.
@@ -81,11 +81,16 @@ The Machine Learning (ML) journey requires continuous experimentation and rapid 
 ### Demo IV - Vision (SageMaker Jumpstart)
 
 * **Use case:** **Detecting Damaged Buildings using Satellite Images of Hurricane Damage**
+    <p align="center"><img width="500" height="500" src="./img/image-3.png"></p>
     * After Hurricane Harvey struck Southeast Texas in September 2017, both Allstate and Farmers Insurance used drones to assess subsequent roof damage. The CEO of Farmers Insurance claimed that, through using drone images and computer vision (CV), the company reduced the time it took to assess hurricane-damage claims.
+    
 * **Dataset:**
-    * The dataset comprises of satellite images from Texas after Hurricane Harvey divided into two groups (damage and no_damage). The goal is to make a computer vision model which can automatically identify if a given region is likely to contain flooding damage. The train set consists of 1000 images of each class.
+    * [YOLO medical mask dataset](https://www.kaggle.com/gooogr/yolo-medical-mask-dataset). The data set comprises of photos of people with medical masks, labeled for odject detection.
+    
 * **Experiment:**
     * SageMaker Jumpstart to train an image classification model.
-    * Fine-tune a pre-trained **ResNet18** CV model on provided dataset.
+    * Fine-tune a pre-trained **SSD MobileNet 1.0** CV model on the provided dataset. This is an object detection model from Gluon CV. It takes an image as input and returns bounding boxes for the objects in the image.
+    * The model is pre-trained on **COCO 2017** dataset which comprises images with multiple objects and the task is to identify the objects and their positions in the image. A list of the objects that the model can identify is given at the end of the page.
+    
 * **Step by step instructions:**
     * Step by step instructions to execute this demo is documented [here](https://github.com/arunprsh/no-code-low-code/blob/main/hcls/vision/README.md).
