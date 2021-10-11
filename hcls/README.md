@@ -81,12 +81,12 @@ The Machine Learning (ML) journey requires continuous experimentation and rapid 
 
 ### Demo IV - Vision (SageMaker Jumpstart)
 
-* **Use case:** **Detecting Damaged Buildings using Satellite Images of Hurricane Damage**
+* **Use case:** **Mask detection**
     <p align="center"><img width="500" height="500" src="./img/image-3.png"></p>
-    * After Hurricane Harvey struck Southeast Texas in September 2017, both Allstate and Farmers Insurance used drones to assess subsequent roof damage. The CEO of Farmers Insurance claimed that, through using drone images and computer vision (CV), the company reduced the time it took to assess hurricane-damage claims.
+    * There are many solutions to prevent the spread of the COVID-19 virus and one of the most effective solutions is wearing a face mask. Almost everyone is wearing face masks at all times in public places during the coronavirus pandemic. This encourages us to explore face mask detection technology to monitor people wearing masks in public places. Most recent and advanced face mask detection approaches are designed using deep learning. In this demo, we will see how to use state-of-the-art object detection models from SageMaker Jumpstart like SSD MobileNet, EfficientNet, VGG16, ResNet etc. to fine-tune an object detection for our data set.
     
 * **Dataset:**
-    * [YOLO medical mask dataset](https://www.kaggle.com/gooogr/yolo-medical-mask-dataset). The data set comprises of photos of people with medical masks, labeled for odject detection.
+    * [YOLO medical mask dataset](https://www.kaggle.com/gooogr/yolo-medical-mask-dataset). The data set comprises of 75 photos of people (130) with medical masks, labeled for odject detection. The annotations are converted from the original YOLO to bbox format in compliance with Jumpstart requirements.
     
 * **Experiment:**
     * SageMaker Jumpstart to train an image classification model.
