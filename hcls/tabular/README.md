@@ -36,5 +36,5 @@
     * SageMaker Autopilot to train and tune an optimal multi-class classifier.
 
 * **Step by step instructions:**
-    * Step by step instructions to execute this demo is documented [here]().
+    * TODO
     
