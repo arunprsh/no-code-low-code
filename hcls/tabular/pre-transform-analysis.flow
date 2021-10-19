@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "version": 1,
+    "disable_limits": false
+  },
+  "nodes": [
+    {
+      "node_id": "9aa426df-5628-4e97-9703-77eb81982013",
+      "type": "SOURCE",
+      "operator": "sagemaker.s3_source_0.1",
+      "parameters": {
+        "dataset_definition": {
+          "__typename": "S3CreateDatasetDefinitionOutput",
+          "datasetSourceType": "S3",
+          "name": "diabetic_readmission.csv",
+          "description": null,
+          "s3ExecutionContext": {
+            "__typename": "S3ExecutionContext",
+            "s3Uri": "s3://sagemaker-us-east-1-119174016168/datasets/diabetic_readmission.csv",
+            "s3ContentType": "csv",
+            "s3HasHeader": true,
+            "s3FieldDelimiter": ",",
+            "s3DirIncludesNested": false,
+            "s3AddsFilenameColumn": false
+          }
+        }
+      },
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "default",
+          "sampling": {
+            "sampling_method": "sample_by_limit",
+            "limit_rows": 50000
+          }
+        }
+      ]
+    },
+    {
+      "node_id": "d18e1042-2b2b-4b13-b8a1-6eeb6a85f0fa",
+      "type": "TRANSFORM",
+      "operator": "sagemaker.spark.infer_and_cast_type_0.1",
+      "parameters": {},
+      "trained_parameters": {
+        "schema": {
+          "readmitted": "string",
+          "race": "string",
+          "gender": "string",
+          "age": "long",
+          "time_in_hospital": "long",
+          "num_lab_procedures": "long",
+          "num_procedures": "long",
+          "num_medications": "long",
+          "number_outpatient": "long",
+          "number_emergency": "long",
+          "number_inpatient": "long",
+          "number_diagnoses": "long",
+          "max_glu_serum": "string",
+          "a1c_result": "string",
+          "change": "long",
+          "diabetes_med": "long"
+        }
+      },
+      "inputs": [
+        {
+          "name": "default",
+          "node_id": "9aa426df-5628-4e97-9703-77eb81982013",
+          "output_name": "default"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "default"
+        }
+      ]
+    },
+    {
+      "node_id": "ec2a7fe4-fa63-4c26-97d4-e1191a2d9fd3",
+      "type": "VISUALIZATION",
+      "operator": "sagemaker.visualizations.quick_model_0.1",
+      "parameters": {
+        "name": "Quick Model (Pre-transform)",
+        "label": "readmitted"
+      },
+      "inputs": [
+        {
+          "name": "df",
+          "node_id": "d18e1042-2b2b-4b13-b8a1-6eeb6a85f0fa",
+          "output_name": "default"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "default"
+        }
+      ]
+    },
+    {
+      "node_id": "daa7a389-c81c-4116-bb8d-b0abba191f59",
+      "type": "VISUALIZATION",
+      "operator": "sagemaker.visualizations.target_leakage_0.1",
+      "parameters": {
+        "name": "Target Leakage (Pre-transform)",
+        "max_features": "20",
+        "problem_type": "classification",
+        "target": "readmitted"
+      },
+      "inputs": [
+        {
+          "name": "df",
+          "node_id": "d18e1042-2b2b-4b13-b8a1-6eeb6a85f0fa",
+          "output_name": "default"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "default"
+        }
+      ]
+    },
+    {
+      "node_id": "00cb3391-a376-405f-9b99-82d63acd96f5",
+      "type": "VISUALIZATION",
+      "operator": "sagemaker.visualizations.feature_correlation_0.1",
+      "parameters": {
+        "name": "Feature Correlation (Pre-transform)",
+        "correlation_type": "linear"
+      },
+      "inputs": [
+        {
+          "name": "df",
+          "node_id": "d18e1042-2b2b-4b13-b8a1-6eeb6a85f0fa",
+          "output_name": "default"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "default"
+        }
+      ]
+    }
+  ]
+}

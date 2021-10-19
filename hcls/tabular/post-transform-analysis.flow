@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "version": 1,
+    "disable_limits": false
+  },
+  "nodes": [
+    {
+      "node_id": "8ed8b0f1-cae8-438d-87fd-b929df82e10d",
+      "type": "SOURCE",
+      "operator": "sagemaker.s3_source_0.1",
+      "parameters": {
+        "dataset_definition": {
+          "__typename": "S3CreateDatasetDefinitionOutput",
+          "datasetSourceType": "S3",
+          "name": "diabetic_transformed.csv",
+          "description": null,
+          "s3ExecutionContext": {
+            "__typename": "S3ExecutionContext",
+            "s3Uri": "s3://sagemaker-us-east-1-119174016168/datasets/diabetic_transformed.csv",
+            "s3ContentType": "csv",
+            "s3HasHeader": true,
+            "s3FieldDelimiter": ",",
+            "s3DirIncludesNested": false,
+            "s3AddsFilenameColumn": false
+          }
+        }
+      },
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "default",
+          "sampling": {
+            "sampling_method": "sample_by_limit",
+            "limit_rows": 50000
+          }
+        }
+      ]
+    },
+    {
+      "node_id": "3c8609f6-1113-40ef-af28-ec47d79f070b",
+      "type": "TRANSFORM",
+      "operator": "sagemaker.spark.infer_and_cast_type_0.1",
+      "parameters": {},
+      "trained_parameters": {
+        "schema": {
+          "readmitted": "string",
+          "age": "long",
+          "time_in_hospital": "long",
+          "num_lab_procedures": "long",
+          "num_medications": "long",
+          "number_emergency": "long",
+          "number_inpatient": "long",
+          "number_diagnoses": "long",
+          "change": "long",
+          "diabetes_med": "long",
+          "race_caucasian": "float",
+          "race_african_american": "float",
+          "race_hispanic": "float",
+          "race_other": "float",
+          "race_asian": "float"
+        }
+      },
+      "inputs": [
+        {
+          "name": "default",
+          "node_id": "8ed8b0f1-cae8-438d-87fd-b929df82e10d",
+          "output_name": "default"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "default"
+        }
+      ]
+    },
+    {
+      "node_id": "2a996ceb-21d8-4aa2-99c8-3945450a76ab",
+      "type": "VISUALIZATION",
+      "operator": "sagemaker.visualizations.quick_model_0.1",
+      "parameters": {
+        "name": "Quick Model (Post-transform)",
+        "label": "readmitted"
+      },
+      "inputs": [
+        {
+          "name": "df",
+          "node_id": "3c8609f6-1113-40ef-af28-ec47d79f070b",
+          "output_name": "default"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "default"
+        }
+      ]
+    }
+  ]
+}
