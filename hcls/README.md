@@ -20,17 +20,16 @@ The Machine Learning (ML) journey requires continuous experimentation and rapid 
     * It is estimated that 9.3% of the population in the United States have diabetes , 28% of which are undiagnosed. The 30-day readmission rate of diabetic patients is 14.4 to 22.7 % . Estimates of readmission rates beyond 30 days after hospital discharge are even higher, with over 26 % of diabetic patients being readmitted within 3 months and 30 % within 1 year. Costs associated with the hospitalization of diabetic patients in the USA were `$124` billion, of which an estimated `$25` billion was attributable to 30-day readmissions assuming a 20 % readmission rate. Therefore, reducing 30-day readmissions of patients with diabetes has the potential to greatly reduce healthcare costs while simultaneously improving care.
 
 * **Dataset:** 
-    * The data set represents 10 years (1999-2008) of clinical care at 130 US hospitals and integrated delivery networks. It includes over 50 features representing patient and hospital outcomes.
+    * The data set represents 10 years (1999-2008) of clinical care at 130 US hospitals and integrated delivery networks. It includes over 15 features representing patient and hospital outcomes.
     * The data contains such attributes as patient number, race, gender, age, admission type, time in hospital, medical specialty of admitting physician, number of lab test performed, HbA1c test result, diagnosis, number of medication, diabetic medications, number of outpatient, inpatient, and emergency visits in the year before the hospitalization, etc.
-    * The data set contains 101,766 rows and 50 feature columns (including the target column).
+    * The data set contains ~70,000 rows and 15 feature columns.
     
 | **Column name**       | **Description**     | 
 | :------------- | :---------- | 
-|`Race Values`| Caucasian, Asian, African American, Hispanic, and other|
+|`Race Values`| Caucasian, Asian, African American or Hispanic|
 |`Gender Values`| Male, Female, and Unknown/Invalid|
 |`Age Grouped in 10-year intervals`|[0-10), [10-20), ..., [90-100)|
 |`Time in hospital`|Integer number of days between admission and discharge|
-|`Medical specialty`|Integer identifier of a specialty of the admitting physician, corresponding to 84 distinct values, for example, cardiology, internal medicine, family/general practice, and surgeon|
 |`Number of lab procedures`|Number of lab tests performed during the encounter|
 |`Number of procedures`|Numeric Number of procedures (other than lab tests) performed during the encounter|
 |`Number of medications`|Number of distinct generic names administered during the encounter|
