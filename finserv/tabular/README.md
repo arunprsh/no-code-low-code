@@ -1,4 +1,6 @@
 ## Demo I: SageMaker Data Wrangler 
+* **Use case:** **Predict Loan Defaults**
+<p align="center"><img width="500" height="500" src="./img/loan-default.png"></p>
 
 * **Pre-requisites:**
     * We need to ensure dataset (loan default prediction) for ML is uploaded to a data source. 

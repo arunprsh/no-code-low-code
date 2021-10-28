@@ -1,6 +1,7 @@
 ## Demo III: SageMaker JumpStart (Language)
 
-* **Text classification (pre-trained)**
+* **Use case: Classify Sentiment in News - Text classification (pre-trained)**
+<p align="center"><img width="500" height="500" src="./img/news.png"></p>
     * For this demo, we will be using SageMaker Jumpstart to use one of its 100s of pre-trained language models directly for text-classification. 
     * You can also fine-tune these language models for various NLP downstream tasks like classification, summarization, question answering etc.
     * For this demo,  we will be using BERT Base Cased pre-trained model to classify FinancialPhraseBank dataset. This dataset contains sentiments for financial news headlines. We will use BERT model to directly classify the headlines into 3 labels.
