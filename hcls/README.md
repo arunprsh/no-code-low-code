@@ -29,7 +29,7 @@ The Machine Learning (ML) journey requires continuous experimentation and rapid 
     * SageMaker Autopilot to train and tune an optimal multi-class classifier.
 
 * **Step by step instructions:**
-    * Step by step instructions to execute this demo is documented [here]().
+    * Step by step instructions to execute this demo is documented [here](https://github.com/arunprsh/no-code-low-code/blob/main/hcls/tabular/diabetic-readmission-classification/README.md)..
     
 ### Demo III - Language (SageMaker Jumpstart)
 
@@ -48,7 +48,7 @@ The Machine Learning (ML) journey requires continuous experimentation and rapid 
     * Use a pre-trained TensorFlow **BERT** pre-trained on **MEDLINE/PubMed** model directly on the provided dataset for classification.
 
 * **Step by step instructions:**
-    * Step by step instructions to execute this demo is documented [here](https://github.com/arunprsh/no-code-low-code/blob/main/hcls/language/README.md).
+    * Step by step instructions to execute this demo is documented [here](https://github.com/arunprsh/no-code-low-code/blob/main/hcls/language/medical-transcripts-classification/README.md).
 
 ### Demo IV - Vision (SageMaker Jumpstart)
 
@@ -66,4 +66,4 @@ The Machine Learning (ML) journey requires continuous experimentation and rapid 
     * The model is pre-trained on **COCO 2017** dataset which comprises images with multiple objects and the task is to identify the objects and their positions in the image. A list of the objects that the model can identify is given at the end of the page.
     
 * **Step by step instructions:**
-    * Step by step instructions to execute this demo is documented [here](https://github.com/arunprsh/no-code-low-code/blob/main/hcls/vision/README.md).
+    * Step by step instructions to execute this demo is documented [here](https://github.com/arunprsh/no-code-low-code/blob/main/hcls/vision/mask-detection/README.md).
