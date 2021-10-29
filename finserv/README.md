@@ -23,7 +23,7 @@ The Machine Learning (ML) journey requires continuous experimentation and rapid 
     * SageMaker DataWrangler to prepare data (joins), perform exploratory data analysis (EDA) and feature engineering of feature columns.
     * SageMaker Autopilot to train and tune an optimal multi-class classifier.
 * **Step by step instructions:**
-    * Step by step instructions to execute this demo is documented [here](https://github.com/arunprsh/no-code-low-code/blob/main/finserv/tabular/loan-default-README.md).
+    * Step by step instructions to execute this demo is documented [here](https://github.com/arunprsh/no-code-low-code/blob/main/finserv/tabular/loan-default-prediction/README.md).
     
 ### Demo III - Language (SageMaker Jumpstart)
 
@@ -37,7 +37,7 @@ The Machine Learning (ML) journey requires continuous experimentation and rapid 
     * SageMaker Jumpstart to train a multi-class sentiment classifier.
     * Use a pre-trained TensorFlow **BERT Base Cased** model directly on the provided dataset for classification.
 * **Step by step instructions:**
-    * Step by step instructions to execute this demo is documented [here](https://github.com/arunprsh/no-code-low-code/blob/main/finserv/language/README.md).
+    * Step by step instructions to execute this demo is documented [here](https://github.com/arunprsh/no-code-low-code/blob/main/finserv/language/news-sentiment-classification/README.md).
 
 ### Demo IV - Vision (SageMaker Jumpstart)
 
@@ -51,4 +51,4 @@ The Machine Learning (ML) journey requires continuous experimentation and rapid 
     * SageMaker Jumpstart to train an image classification model.
     * Fine-tune a pre-trained **ResNet18** CV model on provided dataset.
 * **Step by step instructions:**
-    * Step by step instructions to execute this demo is documented [here](https://github.com/arunprsh/no-code-low-code/blob/main/finserv/vision/README.md).
+    * Step by step instructions to execute this demo is documented [here](https://github.com/arunprsh/no-code-low-code/blob/main/finserv/vision/hurricane-damage-classification/README.md).
