@@ -34,16 +34,18 @@ Lending Club Loan Dataset: The dataset contains complete loan data for all loans
 |`total_credit_lines`|The total number of credit lines currently in the borrower's credit file.|
 
 ### Experiment:
-    `SageMaker Autopilot` to train and tune an optimal binary classifier.
-    `SageMaker DataWrangler` for exploratory data analysis (EDA) of feature columns.
+
+`SageMaker Autopilot` to train and tune an optimal binary classifier.
+`SageMaker DataWrangler` for exploratory data analysis (EDA) of feature columns.
 
 ### Pre-requisites:
-    * We need to ensure dataset (loan default prediction) for ML is uploaded to a data source. 
-    * Data source can be any one of the following options:
-        * S3
-        * Athena
-        * RedShift
-        * SnowFlake
+
+  * We need to ensure dataset (loan default prediction) for ML is uploaded to a data source. 
+  * Data source can be any one of the following options:
+       * S3
+       * Athena
+       * RedShift
+       * SnowFlake
         
 ### Step by step instructions:
 * **Importing datasets from a data source (S3) to Data Wrangler**
