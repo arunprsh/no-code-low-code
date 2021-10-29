@@ -1,6 +1,6 @@
 ## Demo IV: SageMaker Jumpstart (Vision)
 
-* **Use case:** **Detecting Damaged Buildings using Satellite Images of Hurricane Damage - Image classification (fine-tuned)**
+* **Use case: Detecting Damaged Buildings using Satellite Images of Hurricane Damage - Image classification (fine-tuned)**
 <p align="center"><img width="500" height="500" src="./img/harvey.png"></p>
 
     * For this demo, we will be using SageMaker Jumpstart to fine-tune a ResNet computer vision model for image classification to identify satellite images of roof tops for damage after a hurricane. 
