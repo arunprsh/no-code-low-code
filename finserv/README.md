@@ -23,7 +23,7 @@ The Machine Learning (ML) journey requires continuous experimentation and rapid 
     * SageMaker DataWrangler to prepare data (joins), perform exploratory data analysis (EDA) and feature engineering of feature columns.
     * SageMaker Autopilot to train and tune an optimal multi-class classifier.
 * **Step by step instructions:**
-    * Step by step instructions to execute this demo is documented [here](https://github.com/arunprsh/no-code-low-code/blob/main/finserv/tabular/README.md).
+    * Step by step instructions to execute this demo is documented [here](https://github.com/arunprsh/no-code-low-code/blob/main/finserv/tabular/loan-default-README.md).
     
 ### Demo III - Language (SageMaker Jumpstart)
 
