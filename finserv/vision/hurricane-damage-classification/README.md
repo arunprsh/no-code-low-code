@@ -1,6 +1,8 @@
 ## Hurricane Damage Classification
 
-### Use case: Detecting Damaged Buildings using Satellite Images of Hurricane Damage
+### Use case: Detecting Damaged Buildings using Satellite Images of Hurricane Damage - Image Classification (Fine-tuning) 
+<p align="center"><img width="500" height="500" src="./img/harvey.png"></p>
+
 After Hurricane Harvey struck Southeast Texas in September 2017, both Allstate and Farmers Insurance used drones to assess subsequent roof damage. The CEO of Farmers Insurance claimed that, through using drone images and computer vision (CV), the company reduced the time it took to assess hurricane-damage claims.
 
 ### Dataset:
@@ -8,12 +10,9 @@ The dataset comprises of satellite images from Texas after Hurricane Harvey divi
 
 ### Experiment:
 SageMaker Jumpstart to train an image classification model.
-Fine-tune a pre-trained `ResNet18` CV model on provided dataset.
+Fine-tune a pre-trained `ResNet18` CV model on the provided dataset.
 
-
-* **Use case: Detecting Damaged Buildings using Satellite Images of Hurricane Damage - Image classification (fine-tuned)**
-<p align="center"><img width="500" height="500" src="./img/harvey.png"></p>
-
+### Step by step instructions:
    * For this demo, we will be using SageMaker Jumpstart to fine-tune a ResNet computer vision model for image classification to identify satellite images of roof tops for damage after a hurricane. 
    * The images below showcases roof tops that are damaged.
     ![image](./img/image-1.png)
