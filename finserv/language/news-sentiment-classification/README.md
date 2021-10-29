@@ -1,22 +1,22 @@
-## News Sentiment Classification
+# News Sentiment Classification
+<p align="center"><img width="500" height="500" src="./img/news.png"></p>
 
-
-#### Context:
+## Context:
 This dataset (FinancialPhraseBank) contains the sentiments for financial news headlines from the perspective of a retail investor.
 
-#### Content:
+## Content:
 The dataset contains two columns, `label` and `headline`. The label (sentiment) can be negative, neutral or positive.
 
-#### BERT Base Cased:
+## BERT Base Cased:
 `BERT` - **Bidirectional Encoder Representations from Transformers** is a transformer-based machine learning technique for natural language processing pre-training developed by Google. BERT was created and published in 2018 by Jacob Devlin and his colleagues from Google. [Wikipedia](https://en.wikipedia.org/wiki/BERT_(language_model))
 
 #### SageMaker Jumpstart:
 `Amazon SageMaker JumpStart` is a capability of Amazon SageMaker that accelerates your machine learning workflows with one-click access to popular model collections (also known as **model zoos**), and to end-to-end solutions that solve common use cases.
 
-#### Downstream Task:
+## Downstream Task:
 Multi-class Classification 
 
-#### List of pre-trained language models available to be used directly or fine-tuned:
+## List of pre-trained language models available to be used directly or fine-tuned:
 * **BERT Base Cased**
 * BERT Base MEDLINE/PubMed	
 * BERT Base Multilingual Cased	
@@ -28,10 +28,7 @@ Multi-class Classification
 * ELECTRA-Base++	
 * ELECTRA-Small++	
 
-
-
-* **Use case: Classify Sentiment in News - Text classification (pre-trained)**
-<p align="center"><img width="500" height="500" src="./img/news.png"></p>
+## Step by step instructions:
 
    * For this demo, we will be using SageMaker Jumpstart to use one of its 100s of pre-trained language models directly for text-classification. 
    * You can also fine-tune these language models for various NLP downstream tasks like classification, summarization, question answering etc.
