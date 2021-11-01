@@ -96,19 +96,19 @@
     * Autopilot 
         
         * foo bar
-            <p align="center"><img width="750" height="500" src="./img/ap/ap-setup.png"></p>
+            <p align="center"><img width="950" height="700" src="./img/ap/ap-setup.png"></p>
             
         * foo bar
-            <p align="center"><img width="750" height="500" src="./img/ap/ap-setup-2.png"></p>
+            <p align="center"><img width="950" height="700" src="./img/ap/ap-setup-2.png"></p>
             
         * foo bar
-            <p align="center"><img width="750" height="500" src="./img/ap/ap-running.png"></p>
+            <p align="center"><img width="950" height="700" src="./img/ap/ap-running.png"></p>
             
         * foo bar
-            <p align="center"><img width="750" height="500" src="./img/ap/ap-preprocess-done.png"></p>
+            <p align="center"><img width="950" height="700" src="./img/ap/ap-preprocess-done.png"></p>
             
         * foo bar
-            <p align="center"><img width="750" height="500" src="./img/ap/exp-complete.png"></p>
+            <p align="center"><img width="950" height="700" src="./img/ap/exp-complete.png"></p>
             
         * foo bar
-            <p align="center"><img width="750" height="500" src="./img/ap/individual-model.png"></p>
+            <p align="center"><img width="950" height="700" src="./img/ap/individual-model.png"></p>
