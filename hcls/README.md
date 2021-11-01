@@ -29,7 +29,7 @@ The Machine Learning (ML) journey requires continuous experimentation and rapid 
     * SageMaker Autopilot to train and tune an optimal multi-class classifier.
 
 * **Step by step instructions:**
-    * Step by step instructions to execute this demo is documented [here](https://github.com/arunprsh/no-code-low-code/blob/main/hcls/tabular/diabetic-readmission-classification/README.md)..
+    * Step by step instructions to execute this demo is documented [here](https://github.com/arunprsh/no-code-low-code/blob/main/hcls/tabular/diabetic-readmission-prediction/README.md).
     
 ### Demo III - Language (SageMaker Jumpstart)
 
