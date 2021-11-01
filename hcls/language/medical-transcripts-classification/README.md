@@ -16,13 +16,13 @@
 
 * **Step by step instructions:**
     * foo bar
-        <p align="center"><img width="750" height="500" src="./img/text-models.png"></p>
+        <p align="center"><img width="950" height="700" src="./img/text-models.png"></p>
         
     * foo bar
-        <p align="center"><img width="750" height="500" src="./img/pubmed.png"></p>
+        <p align="center"><img width="950" height="700" src="./img/pubmed.png"></p>
         
     * foo bar
-        <p align="center"><img width="750" height="500" src="./img/fine-tune-1.png"></p>
+        <p align="center"><img width="950" height="700" src="./img/fine-tune-1.png"></p>
         
     * foo bar
-        <p align="center"><img width="750" height="500" src="./img/fine-tune-2.png"></p>
+        <p align="center"><img width="950" height="700" src="./img/fine-tune-2.png"></p>
