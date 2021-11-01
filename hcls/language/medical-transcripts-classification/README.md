@@ -15,10 +15,11 @@
     * Use a pre-trained TensorFlow **BERT** pre-trained on **MEDLINE/PubMed** model directly on the provided dataset for classification.
 
 * **Step by step instructions:**
-    * foo bar
+    * Start by executing the *explore-data.ipynb* notebook in this repo to take a look at the data and specialities to be predicted. Running the notebook also uploads the data self contained in this repository to S3 for training later.
+    * From the left icon pane, navigate to the Jumpstart icon and hit **Browse Jumpstart** as shown in the image below.
         <p align="center"><img width="950" height="700" src="./img/text-models.png"></p>
         
-    * foo bar
+    * As you can see, there are over 100+ language models pre-trained for various downstream tasks available within Jumpstart.
         <p align="center"><img width="950" height="700" src="./img/pubmed.png"></p>
         
     * foo bar
