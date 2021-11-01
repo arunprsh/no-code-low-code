@@ -14,4 +14,14 @@
     * The model is pre-trained on **COCO 2017** dataset which comprises images with multiple objects and the task is to identify the objects and their positions in the image. A list of the objects that the model can identify is given at the end of the page.
     
 * **Step by step instructions:**
-    * TODO
+    * foo bar 
+        <p align="center"><img width="500" height="500" src="./img/vision.png"></p>
+        
+    * foo bar 
+        <p align="center"><img width="500" height="500" src="./img/object-detection.png"></p>
+          
+    * foo bar 
+        <p align="center"><img width="500" height="500" src="./img/SSD.png"></p>
+        
+    * foo bar 
+        <p align="center"><img width="500" height="500" src="./img/fine-tune-SSD.png"></p>

@@ -15,4 +15,14 @@
     * Use a pre-trained TensorFlow **BERT** pre-trained on **MEDLINE/PubMed** model directly on the provided dataset for classification.
 
 * **Step by step instructions:**
-    * TODO
+    * foo bar
+        <p align="center"><img width="750" height="500" src="./img/text-models.png"></p>
+        
+    * foo bar
+        <p align="center"><img width="750" height="500" src="./img/pubmed.png"></p>
+        
+    * foo bar
+        <p align="center"><img width="750" height="500" src="./img/fine-tune-1.png"></p>
+        
+    * foo bar
+        <p align="center"><img width="750" height="500" src="./img/fine-tune-2.png"></p>
