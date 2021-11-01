@@ -16,14 +16,16 @@
 
 * **Step by step instructions:**
     * Start by executing the *explore-data.ipynb* notebook in this repo to take a look at the data and specialities to be predicted. Running the notebook also uploads the data self contained in this repository to S3 for training later.
-    * From the left icon pane, navigate to the Jumpstart icon and hit **Browse Jumpstart** as shown in the image below.
+    * From the left icon pane, navigate to the Jumpstart icon and hit **Browse Jumpstart** as shown in the image below. As you can see, there are over 100+ language models pre-trained for various downstream tasks available within Jumpstart. Click view all models.
         <p align="center"><img width="950" height="700" src="./img/text-models.png"></p>
         
-    * As you can see, there are over 100+ language models pre-trained for various downstream tasks available within Jumpstart.
+    * In the search box, you can type "text classification" to filter all the models that are trained specifically for text classification. For our use case of classifying medical transcripts to specialities, let us fine-tune a BERT model pre-trained on MEDLINE/PubMed data. Type "pubmed" to get to the model quickly.
         <p align="center"><img width="950" height="700" src="./img/pubmed.png"></p>
-        
-    * foo bar
+   
+    * Once we click on the appropiate model we want to use for our use case, you can see 2 options - i) you can use the pre-trained model as it is to do the classification or ii) fine-tune the pre-trained model to learn the custom knowledge from our dataset.
         <p align="center"><img width="950" height="700" src="./img/fine-tune-1.png"></p>
         
-    * foo bar
+    * Choose **Fine-tune Model** and enter basic information like s3 input path, model name and choose the instance type to be used for training. It is recommended to use a 'P' type instance with GPUs for training. For hyperparameters, we can use the defaults. 
         <p align="center"><img width="950" height="700" src="./img/fine-tune-2.png"></p>
+    * Once the fine-tuning is complete, you can deploy the model for real-time inference.
+    * The example notebook *make-prediction.ipynb* contained in this repo demonstrates how to invoke the deployed endpoint for classification (inference).
