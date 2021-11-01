@@ -36,5 +36,62 @@
     * SageMaker Autopilot to train and tune an optimal multi-class classifier.
 
 * **Step by step instructions:**
-    * TODO
+    * Data Wrangler
+        * Pre-transform Analysis
+        
+            * foo bar 
+                <p align="center"><img width="750" height="500" src="./img/dw/import-data.png"></p>
+            
+            * foo bar 
+                <p align="center"><img width="750" height="500" src="./img/dw/import-data-2.png"></p>
+            
+            * foo bar 
+                <p align="center"><img width="750" height="500" src="./img/dw/analysis-dashboard.png"></p>
+
+            * foo bar 
+                <p align="center"><img width="750" height="500" src="./img/dw/analysis-dashboard-2.png"></p>
+            
+            * foo bar 
+                <p align="center"><img width="750" height="500" src="./img/dw/correlation-details.png"></p>
+            
+            * foo bar 
+                <p align="center"><img width="750" height="500" src="./img/dw/correlation.png"></p>
+            
+            * foo bar 
+                <p align="center"><img width="750" height="500" src="./img/dw/correlation-matrix.png"></p>
+            
+            * foo bar 
+                <p align="center"><img width="750" height="500" src="./img/dw/quick-model.png"></p>
+            
+            * foo bar 
+                <p align="center"><img width="750" height="500" src="./img/dw/feature-attribution.png"></p>
+            
+            * foo bar 
+                <p align="center"><img width="750" height="500" src="./img/dw/target-leakage.png"></p>
+            
+            * foo bar 
+                <p align="center"><img width="750" height="500" src="./img/dw/target-leakage-2.png"></p>
+            
+            
+        * Feature Transformations 
+        
+            * foo bar 
+                <p align="center"><img width="750" height="500" src="./img/dw/encode-categorical.png"></p>
+                
+            * foo bar 
+                <p align="center"><img width="750" height="500" src="./img/dw/one-hot.png"></p>
+                
+            * foo bar
+                <p align="center"><img width="750" height="500" src="./img/dw/export-flow-1.png"></p>
+                
+            * foo bar
+                <p align="center"><img width="750" height="500" src="./img/dw/export-flow-2.png"></p>
+        
+        * Post-transform Analysis 
+            * foo bar 
+            
+    
+    
+    
+    * Autopilot 
     
