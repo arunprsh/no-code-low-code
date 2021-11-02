@@ -37,9 +37,9 @@
 
 * **Step by step instructions:**
     * **Data Wrangler**
-        * Let's start with the *explore-data.ipynb* example notebook in this repo to take a look at our dataset and upload the data from local `data` folder to S3. With Data Wrangler, we are going to follow a 3-step approach for transforming our raw data columns into ML-ready feature columns. First, we start by performing some analyses prior to doing data transformations. We then follow this by applying a few transformations and finally we will also be doing analysis at the end to ensure we improved data quality so that 
+        * Let's start with the *explore-data.ipynb* example notebook in this repo to take a look at our dataset and upload the data from local `data` folder to S3. With Data Wrangler, we are going to follow a 3-step approach for transforming our raw data columns into ML-ready feature columns. First, we start by performing some analyses prior to doing data transformations. We then follow by applying few data transformations and finally do more analysis on the transformed data to ensure we improved its quality. We validate this by comparing the results of analyses performed pre and post data transformations. Now, let us walkthrough each individual stage one by one.
         * Pre-transform Analysis
-        
+            * In this phase, we import the dataset from S3 and do 3 types of analysis. 1) Linear Feature Correlation, 2) Target Leakage and, 3) Quick Model.
             * foo bar 
                 <p align="center"><img width="750" height="500" src="./img/dw/import-data.png"></p>
             
