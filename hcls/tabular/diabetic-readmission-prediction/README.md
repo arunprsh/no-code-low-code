@@ -61,7 +61,7 @@
             * You can also see the correlation matrix as a heatmap. This is automatically generated for you. Save the analysis.
                 <p align="center"><img width="750" height="500" src="./img/dw/correlation-matrix.png"></p>
             
-            * Next, we will create a Quick Model using the raw features. Use the Quick Model visualization to quickly evaluate your data and produce importance scores for each feature. A feature importance score indicates how useful a feature is at predicting a target label. The feature importance score is between [0, 1] and a higher number indicates that the feature is more important to the whole dataset. On the top of the quick model chart, there is a model score. A classification problem shows an F1 score. A regression problem has a mean squared error (MSE) score.<br>When you create a quick model chart, you select a dataset you want evaluated, and a target label against which you want feature importance to be compared. Data Wrangler does the following:<br>
+            * Next, we will create a Quick Model using the raw features. Use the Quick Model visualization to quickly evaluate your data and produce importance scores for each feature. A feature importance score indicates how useful a feature is at predicting a target label. The feature importance score is between [0, 1] and a higher number indicates that the feature is more important to the whole dataset. On the top of the quick model chart, there is a model score. A classification problem shows an F1 score. A regression problem has a mean squared error (MSE) score.<br><br>When you create a quick model chart, you select a dataset you want evaluated, and a target label against which you want feature importance to be compared. Data Wrangler does the following:<br>
             > Infers the data types for the target label and each feature in the dataset selected.<br><br>
             > Determines the problem type. Based on the number of distinct values in the label column, Data Wrangler determines if this is a regression or classification problem type. Data Wrangler sets a categorical threshold to 100. If there are more than 100 distinct values in the label column, Data Wrangler classifies it as a regression problem; otherwise, it is classified as a classification problem.<br><br>
             > Pre-process features and label data for training. The algorithm used requires encoding features to vector type and encoding labels to double type.<br><br>
@@ -71,10 +71,20 @@
  
              <p align="center"><img width="750" height="500" src="./img/dw/quick-model.png"></p>
             
-            * foo bar 
+            * Screenshot of Quick Model's feature attribution scores.
                 <p align="center"><img width="750" height="500" src="./img/dw/feature-attribution.png"></p>
             
-            * foo bar 
+            * The last analysis we will be doing is to look for target leakage in our data. Target leakage occurs when there is data in a machine learning training dataset that is strongly correlated with the target label, but is not available in real-world data. For example, you may have a column in your dataset that serves as a proxy for the column you want to predict with your model.<br><br>When you use the Target Leakage analysis, you specify the following:<br>
+
+    > Target: This is the feature about which you want your ML model to be able to make predictions.<br><br>
+
+    Problem type: This is the ML problem type on which you are working. Problem type can either be classification or regression.<br><br>
+
+    (Optional) Max features: This is the maximum number of features to present in the visualization, which shows features ranked by their risk of being target leakage.<br><br>
+
+For classification, the Target Leakage analysis uses the area under the receiver operating characteristic, or AUC - ROC curve for each column, up to Max features. For regression, it uses a coefficient of determination, or R2 metric.
+
+The AUC - ROC curve provides a predictive metric, computed individually for each column using cross-validation, on a sample of up to around 1000 rows. A score of 1 indicates perfect predictive abilities, which often indicates target leakage. A score of 0.5 or lower indicates that the information on the column could not provide, on its own, any useful information towards predicting the target. Although it can happen that a column is uninformative on its own but is useful in predicting the target when used in tandem with other features, a low score could indicate the feature is redundant. 
                 <p align="center"><img width="750" height="500" src="./img/dw/target-leakage.png"></p>
             
             * foo bar 
