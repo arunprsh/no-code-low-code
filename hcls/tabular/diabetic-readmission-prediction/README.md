@@ -36,7 +36,8 @@
     * SageMaker Autopilot to train and tune an optimal multi-class classifier.
 
 * **Step by step instructions:**
-    * Data Wrangler
+    * **Data Wrangler**
+        * Let's start with the *explore-data.ipynb* example notebook in this repo to take a look at our dataset and upload the data from local `data` folder to S3. With Data Wrangler, we are going to follow a 3-step approach for transforming our raw data columns into ML-ready feature columns. First, we start by performing some analyses prior to doing data transformations. We then follow this by applying a few transformations and finally we will also be doing analysis at the end to ensure we improved data quality so that 
         * Pre-transform Analysis
         
             * foo bar 
