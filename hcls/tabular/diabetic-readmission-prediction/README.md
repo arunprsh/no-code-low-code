@@ -94,18 +94,26 @@
             
             
     * *Feature Transformations*
+        Next, based on our initial exploratory analyses, lets apply some transformations to the raw features. 
         
         *  Foo Bar
             <p align="center"><img width="750" height="500" src="./img/dw/add-transform.png"></p>
                 
         *  Foo Bar
             <p align="center"><img width="750" height="500" src="./img/dw/add-transform-dw.png"></p>
+            
+        * Lets drop all the redundant columns based on our previous analyses.
+             <p align="center"><img width="750" height="500" src="./img/dw/drop-column.png"></p>
+        
         
         * foo bar 
             <p align="center"><img width="750" height="500" src="./img/dw/encode-categorical.png"></p>
                 
         * foo bar 
             <p align="center"><img width="750" height="500" src="./img/dw/one-hot.png"></p>
+        
+        * foo bar
+            <p align="center"><img width="750" height="500" src="./img/dw/direct-export.png"></p>
                 
         * foo bar
             <p align="center"><img width="750" height="500" src="./img/dw/export-flow-1.png"></p>
