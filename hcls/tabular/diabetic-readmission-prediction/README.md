@@ -133,21 +133,19 @@
            
     
     * **Autopilot**
-        
-        * foo bar
-            <p align="center"><img width="950" height="700" src="./img/ap/ap-setup.png"></p>
+        * For the Autopilot experiment, we will be using the transformed features exported via Data Wrangler to S3. From the Autopilot interface, specifiy the experiment settings as shown in the screenshots below and hit `Create Experiment`.
+         <p align="center"><img width="950" height="700" src="./img/ap/ap-setup.png"></p>
             
-        * foo bar
-            <p align="center"><img width="950" height="700" src="./img/ap/ap-setup-2.png"></p>
+         <p align="center"><img width="950" height="700" src="./img/ap/ap-setup-2.png"></p>
             
-        * foo bar
+        * Once the Autopilot experiment starts, you will see it complete stages one by one starting with the pre-processing stage as shown below.
             <p align="center"><img width="950" height="700" src="./img/ap/ap-running.png"></p>
             
-        * foo bar
+        * Once the candidate definitions (i.e., 10 feature engineering pipelines) are generated, you can see 2 buttons are enabled on the right upper corner of the workspace. These are links to generated notebooks showing the code for feature engineering and data exploration.
             <p align="center"><img width="950" height="700" src="./img/ap/ap-preprocess-done.png"></p>
             
-        * foo bar
+        * Once all the stages are completed, you can see ranked list of all the trained models by Autopilot along with the captured metrics.
             <p align="center"><img width="950" height="700" src="./img/ap/exp-complete.png"></p>
             
-        * foo bar
+        * You can dive into the details of individual models by right clicking on the model and choosing `Open in model details`.
             <p align="center"><img width="950" height="700" src="./img/ap/individual-model.png"></p>
