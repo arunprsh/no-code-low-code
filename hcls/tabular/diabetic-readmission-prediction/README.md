@@ -126,14 +126,14 @@
     * *Post-transform Analysis*
         * For post-transform analysis, lets use the output of the previous stage where we performed a few transformations. By direct export, the output of the previous stage can be stored in S3. We can import this transformed features and build a Quick Model to see changes in feature attribution and most importantly validate if the transformations did really help with the predictions. 
         
-        * Here, you can see both changes to feature attributions and improvement to the model prediction ability (increase in F-score) as shown in the screenshots below.
+        * Here, you can see both the changes to feature attributions and improvement to the model prediction ability (increase in F-score) as shown in the screenshots below.
         <p align="center"><img width="750" height="500" src="./img/dw/post-f1.png"></p>
         
         <p align="center"><img width="750" height="500" src="./img/dw/post-f1-improved.png"></p>
         * All the data flow files and generated notebooks by Data Wrangler can be found [here](https://github.com/arunprsh/no-code-low-code/tree/main/hcls/tabular/diabetic-readmission-prediction/data-wrangler).
     
     * **Autopilot**
-        * For the Autopilot experiment, we will be using the transformed features exported via Data Wrangler to S3. From the Autopilot interface, specifiy the experiment settings as shown in the screenshots below and hit `Create Experiment`.
+        * For the Autopilot experiment, we will be using the transformed features exported via Data Wrangler to S3. From the Autopilot interface, specify the experiment settings as shown in the screenshots below and hit `Create Experiment`.
          <p align="center"><img width="950" height="700" src="./img/ap/ap-setup.png"></p>
             
          <p align="center"><img width="950" height="700" src="./img/ap/ap-setup-2.png"></p>
