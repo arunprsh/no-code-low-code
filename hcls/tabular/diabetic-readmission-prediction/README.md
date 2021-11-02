@@ -45,8 +45,14 @@
             
             * Navigate to your default bucket and choose `diabetic-readmission.csv` file.
                 <p align="center"><img width="750" height="500" src="./img/dw/import-data-2.png"></p>
+                
+            *  Foo Bar
+                <p align="center"><img width="750" height="500" src="./img/dw/add-analysis.png"></p>
+                
+            *  Foo Bar
+                <p align="center"><img width="750" height="500" src="./img/dw/analysis.png"></p>
             
-            *  
+            *  Foo Bar
                 <p align="center"><img width="750" height="500" src="./img/dw/analysis-dashboard.png"></p>
 
             * foo bar 
