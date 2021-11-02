@@ -14,6 +14,7 @@
     * The model is pre-trained on **COCO 2017** dataset which comprises images with multiple objects and the task is to identify the objects and their positions in the image. A list of the objects that the model can identify is given at the end of the page.
     
 * **Step by step instructions:**
+    * Start with *explore-data.ipynb* example notebook to look at the training data we will be using for this exercise. Running the notebook also copies the training images to S3 from local `data` folder in this repo.
     * For this exercise, navigate to the vision models under SageMaker Jumpstart.
         <p align="center"><img width="500" height="500" src="./img/vision.png"></p>
         
