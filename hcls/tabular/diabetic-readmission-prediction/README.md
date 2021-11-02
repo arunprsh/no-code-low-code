@@ -141,7 +141,7 @@
         * Once the Autopilot experiment starts, you will see it complete stages one by one starting with the pre-processing stage as shown below.
             <p align="center"><img width="950" height="700" src="./img/ap/ap-running.png"></p>
             
-        * Once the candidate definitions (i.e., 10 feature engineering pipelines) are generated, you can see 2 buttons are enabled on the right upper corner of the workspace. These are links to generated notebooks showing the code for feature engineering and data exploration.
+        * Once the candidate definitions (i.e., 10 feature engineering pipelines) are generated, you will see 2 buttons that are enabled on the right upper corner of the workspace. Clicking those buttons take you to generated notebooks showing the code for feature engineering and data exploration.
             <p align="center"><img width="950" height="700" src="./img/ap/ap-preprocess-done.png"></p>
             
         * Once all the stages are completed, you can see ranked list of all the trained models by Autopilot along with the captured metrics.
