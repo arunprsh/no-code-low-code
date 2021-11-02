@@ -149,3 +149,4 @@
             
         * You can dive into the details of individual models by right clicking on the model and choosing `Open in model details`.
             <p align="center"><img width="950" height="700" src="./img/ap/individual-model.png"></p>
+        * Once the experiment is completed, Autopilot will automatically deploy the best model as a real-time REST endpoint. 
