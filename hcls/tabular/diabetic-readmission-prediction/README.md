@@ -80,31 +80,32 @@
     > Problem type: This is the ML problem type on which you are working. Problem type can either be classification or regression.<br><br>
     > (Optional) Max features: This is the maximum number of features to present in the visualization, which shows features ranked by their risk of being target leakage.<br><br>
     > For classification, the Target Leakage analysis uses the area under the receiver operating characteristic, or AUC - ROC curve for each column, up to Max features. For regression, it uses a coefficient of determination, or R2 metric.<br><br>
-    > The AUC - ROC curve provides a predictive metric, computed individually for each column using cross-validation, on a sample of up to around 1000 rows. A score of 1 indicates perfect predictive abilities, which often indicates target leakage. A score of 0.5 or lower indicates that the information on the column could not provide, on its own, any useful information towards predicting the target. Although it can happen that a column is uninformative on its own but is useful in predicting the target when used in tandem with other features, a low score could indicate the feature is redundant. <br>
-            <p align="center"><img width="750" height="500" src="./img/dw/target-leakage.png"></p>
+    > The AUC - ROC curve provides a predictive metric, computed individually for each column using cross-validation, on a sample of up to around 1000 rows. A score of 1 indicates perfect predictive abilities, which often indicates target leakage. A score of 0.5 or lower indicates that the information on the column could not provide, on its own, any useful information towards predicting the target. Although it can happen that a column is uninformative on its own but is useful in predicting the target when used in tandem with other features, a low score could indicate the feature is redundant.<br>
             
-            * foo bar 
-                <p align="center"><img width="750" height="500" src="./img/dw/target-leakage-2.png"></p>
+    <p align="center"><img width="750" height="500" src="./img/dw/target-leakage.png"></p>
+            
+* foo bar 
+    <p align="center"><img width="750" height="500" src="./img/dw/target-leakage-2.png"></p>
                 
-            * foo bar 
-                <p align="center"><img width="750" height="500" src="./img/dw/analysis-dashboard-2.png"></p>
+* foo bar 
+    <p align="center"><img width="750" height="500" src="./img/dw/analysis-dashboard-2.png"></p>
             
             
-        * Feature Transformations 
+* Feature Transformations 
         
-            *  Foo Bar
-                <p align="center"><img width="750" height="500" src="./img/dw/add-transform.png"></p>
+*  Foo Bar
+    <p align="center"><img width="750" height="500" src="./img/dw/add-transform.png"></p>
                 
-            *  Foo Bar
-                <p align="center"><img width="750" height="500" src="./img/dw/add-transform-dw.png"></p>
+*  Foo Bar
+    <p align="center"><img width="750" height="500" src="./img/dw/add-transform-dw.png"></p>
         
-            * foo bar 
-                <p align="center"><img width="750" height="500" src="./img/dw/encode-categorical.png"></p>
+* foo bar 
+    <p align="center"><img width="750" height="500" src="./img/dw/encode-categorical.png"></p>
                 
-            * foo bar 
-                <p align="center"><img width="750" height="500" src="./img/dw/one-hot.png"></p>
+ * foo bar 
+    <p align="center"><img width="750" height="500" src="./img/dw/one-hot.png"></p>
                 
-            * foo bar
+* foo bar
                 <p align="center"><img width="750" height="500" src="./img/dw/export-flow-1.png"></p>
                 
             * foo bar
