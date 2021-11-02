@@ -6,6 +6,9 @@ The Machine Learning (ML) journey requires continuous experimentation and rapid 
     * Learn how to simplify the process of data preparation and feature engineering, and complete each step of the data preparation workflow.
     * Understand how to automatically build, train, and tune the best machine learning models based on your data, while allowing you to maintain full control and visibility.
     * Get started with ML easily and quickly using pre-built solutions for common use cases and open source models from popular model zoos.
+    
+* **Prerequisites**
+    * As a prerequisite to the workshop demos, we recommend you spend sometime going through the resources shared [here](https://github.com/arunprsh/no-code-low-code/blob/main/prerequisites.md).
 
 ## > Representative Use Cases for Financial Services (FinServ) domain:
 **Note:** If you are new to SageMaker Studio, instructions to get started with SageMaker Studio and setup this demo repository are provided [here](https://github.com/arunprsh/no-code-low-code/blob/main/setup-studio.md).
