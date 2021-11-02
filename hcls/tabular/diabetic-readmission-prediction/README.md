@@ -70,6 +70,9 @@
             >Calculates feature importance for each feature using the Gini importance method.<br>
  
              <p align="center"><img width="750" height="500" src="./img/dw/quick-model.png"></p>
+             
+            * Screenshot of Quick Model's F1 Score.
+                <p align="center"><img width="750" height="500" src="./img/dw/pre-f1.png"></p>
             
             * Screenshot of Quick Model's feature attribution scores.
                 <p align="center"><img width="750" height="500" src="./img/dw/feature-attribution.png"></p>
@@ -109,20 +112,23 @@
         * Next, lets one hot encode the `race` column using the encode categorical option as shown below.
             <p align="center"><img width="750" height="500" src="./img/dw/encode-categorical.png"></p>
                 
-        * 
             <p align="center"><img width="750" height="500" src="./img/dw/one-hot.png"></p>
         
-        * foo bar
+        * Next, click on **Back to data flow** to head back to the data flow interface. You can also export the output the transformed features so far directly into S3 by clicking on the **Export data** button.
             <p align="center"><img width="750" height="500" src="./img/dw/direct-export.png"></p>
                 
-        * foo bar
+        * Click on the export tab and select all the transforms to be exported as shown below.
             <p align="center"><img width="750" height="500" src="./img/dw/export-flow-1.png"></p>
                 
-        * foo bar
+        * For exporting, choose one of the many options that are available.
             <p align="center"><img width="750" height="500" src="./img/dw/export-flow-2.png"></p>
         
     * *Post-transform Analysis*
-        * foo bar 
+        * For post-transform analysis, lets use the output of the previous stage where we performed a few transformations. By direct export, the output of the previous stage can be stored in S3. We can import this transformed features and build a Quick Model to see changes in feature attribution and most importantly validate if the transformations did really help with the predictions. 
+        
+        <p align="center"><img width="750" height="500" src="./img/dw/post-f1.png"></p>
+        
+        <p align="center"><img width="750" height="500" src="./img/dw/export-flow-1.png"></p>
            
     
     * **Autopilot**
