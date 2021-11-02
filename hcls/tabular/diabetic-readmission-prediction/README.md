@@ -82,11 +82,13 @@
     > For classification, the Target Leakage analysis uses the area under the receiver operating characteristic, or AUC - ROC curve for each column, up to Max features. For regression, it uses a coefficient of determination, or R2 metric.<br><br>
     > The AUC - ROC curve provides a predictive metric, computed individually for each column using cross-validation, on a sample of up to around 1000 rows. A score of 1 indicates perfect predictive abilities, which often indicates target leakage. A score of 0.5 or lower indicates that the information on the column could not provide, on its own, any useful information towards predicting the target. Although it can happen that a column is uninformative on its own but is useful in predicting the target when used in tandem with other features, a low score could indicate the feature is redundant.<br>
             
-    <p align="center"><img width="750" height="500" src="./img/dw/target-leakage.png"></p>
+
+    <p align="center"><img width="750" height="500" src="./img/dw/target-leakage-2.png"></p>
             
-    * foo bar 
-        <p align="center"><img width="750" height="500" src="./img/dw/target-leakage-2.png"></p>
-                
+    *  You can see the results in the below screenshot showing the interpretation of the prediction ability of the colum
+    <p align="center"><img width="750" height="500" src="./img/dw/target-leakage.png"></p>
+        
+             
     * foo bar 
         <p align="center"><img width="750" height="500" src="./img/dw/analysis-dashboard-2.png"></p>
             
