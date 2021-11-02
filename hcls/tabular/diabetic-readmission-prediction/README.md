@@ -96,20 +96,20 @@
     * *Feature Transformations*
         Next, based on our initial exploratory analyses, lets apply some transformations to the raw features. 
         
-        *  Foo Bar
+        *  To apply data transformation, click on "Add transform" as shown below.
             <p align="center"><img width="750" height="500" src="./img/dw/add-transform.png"></p>
                 
-        *  Foo Bar
+        *  From the Transforms interface, click "Add step". Data Wrangler provides 400+ transforms that you can choose. 
             <p align="center"><img width="750" height="500" src="./img/dw/add-transform-dw.png"></p>
             
-        * Lets drop all the redundant columns based on our previous analyses.
+        * Lets drop all the redundant columns based on our previous analyses. First, lets drop the `max_glu_serum` column as shown in the screenshot below.
              <p align="center"><img width="750" height="500" src="./img/dw/drop-column.png"></p>
         
-        
-        * foo bar 
+        * Similar to the above transform, lets also drop columns - `a1c_result`, `gender`, `num_procedures` and `num_outpatient`,
+        * Next, lets one hot encode the `race` column using the encode categorical option as shown below.
             <p align="center"><img width="750" height="500" src="./img/dw/encode-categorical.png"></p>
                 
-        * foo bar 
+        * 
             <p align="center"><img width="750" height="500" src="./img/dw/one-hot.png"></p>
         
         * foo bar
