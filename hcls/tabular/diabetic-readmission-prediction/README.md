@@ -46,16 +46,13 @@
             * Navigate to your default bucket and choose `diabetic-readmission.csv` file.
                 <p align="center"><img width="750" height="500" src="./img/dw/import-data-2.png"></p>
                 
-            *  Foo Bar
+            *  Once you import the dataset, choose **Add analysis** to start performing analyses on the raw imported data.
                 <p align="center"><img width="750" height="500" src="./img/dw/add-analysis.png"></p>
                 
-            *  Foo Bar
+            *  As you can see from the screenshot below, Data Wrangler provides many options for exploratory data analysis and visualization. 
                 <p align="center"><img width="750" height="500" src="./img/dw/analysis.png"></p>
-
-            * foo bar 
-                <p align="center"><img width="750" height="500" src="./img/dw/analysis-dashboard-2.png"></p>
             
-            * foo bar 
+            * As a first analysis, we will be looking into the raw feature columns to see if there 
                 <p align="center"><img width="750" height="500" src="./img/dw/correlation-details.png"></p>
             
             * foo bar 
@@ -75,6 +72,9 @@
             
             * foo bar 
                 <p align="center"><img width="750" height="500" src="./img/dw/target-leakage-2.png"></p>
+                
+            * foo bar 
+                <p align="center"><img width="750" height="500" src="./img/dw/analysis-dashboard-2.png"></p>
             
             
         * Feature Transformations 
