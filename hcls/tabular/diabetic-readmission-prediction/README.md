@@ -130,7 +130,7 @@
         <p align="center"><img width="750" height="500" src="./img/dw/post-f1.png"></p>
         
         <p align="center"><img width="750" height="500" src="./img/dw/post-f1-improved.png"></p>
-           
+        
     
     * **Autopilot**
         * For the Autopilot experiment, we will be using the transformed features exported via Data Wrangler to S3. From the Autopilot interface, specifiy the experiment settings as shown in the screenshots below and hit `Create Experiment`.
@@ -150,3 +150,4 @@
         * You can dive into the details of individual models by right clicking on the model and choosing `Open in model details`.
             <p align="center"><img width="950" height="700" src="./img/ap/individual-model.png"></p>
         * Once the experiment is completed, Autopilot will automatically deploy the best model as a real-time REST endpoint. 
+        * The Autopilot generated candidate definitions and exploratory data analysis notebooks can be found [here](https://github.com/arunprsh/no-code-low-code/tree/main/hcls/tabular/diabetic-readmission-prediction/autopilot).
