@@ -83,9 +83,6 @@
                 <p align="center"><img width="750" height="500" src="./img/dw/add-transform.png"></p>
                 
             *  Foo Bar
-                <p align="center"><img width="750" height="500" src="./img/dw/adding-transform.png"></p>
-                
-            *  Foo Bar
                 <p align="center"><img width="750" height="500" src="./img/dw/add-transform-dw.png"></p>
         
             * foo bar 
