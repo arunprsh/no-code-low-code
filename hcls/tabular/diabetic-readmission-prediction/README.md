@@ -103,7 +103,7 @@
     
     
     
-    * Autopilot 
+    * **Autopilot**
         
         * foo bar
             <p align="center"><img width="950" height="700" src="./img/ap/ap-setup.png"></p>
