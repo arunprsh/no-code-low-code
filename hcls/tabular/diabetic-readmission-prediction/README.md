@@ -126,9 +126,10 @@
     * *Post-transform Analysis*
         * For post-transform analysis, lets use the output of the previous stage where we performed a few transformations. By direct export, the output of the previous stage can be stored in S3. We can import this transformed features and build a Quick Model to see changes in feature attribution and most importantly validate if the transformations did really help with the predictions. 
         
+        * Here, you can see both changes to feature attributions and improvement to the model prediction ability (increase in F-score) as shown in the screenshots below.
         <p align="center"><img width="750" height="500" src="./img/dw/post-f1.png"></p>
         
-        <p align="center"><img width="750" height="500" src="./img/dw/export-flow-1.png"></p>
+        <p align="center"><img width="750" height="500" src="./img/dw/post-f1-improved.png"></p>
            
     
     * **Autopilot**
