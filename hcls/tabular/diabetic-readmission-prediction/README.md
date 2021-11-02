@@ -61,21 +61,15 @@
             * You can also see the correlation matrix as a heatmap. This is automatically generated for you. Save the analysis.
                 <p align="center"><img width="750" height="500" src="./img/dw/correlation-matrix.png"></p>
             
-            * Next, we will create a Quick Model using the raw features. Use the Quick Model visualization to quickly evaluate your data and produce importance scores for each feature. A feature importance score indicates how useful a feature is at predicting a target label. The feature importance score is between [0, 1] and a higher number indicates that the feature is more important to the whole dataset. On the top of the quick model chart, there is a model score. A classification problem shows an F1 score. A regression problem has a mean squared error (MSE) score.<br>When you create a quick model chart, you select a dataset you want evaluated, and a target label against which you want feature importance to be compared. Data Wrangler does the following:<br>
-
-        * Infers the data types for the target label and each feature in the dataset selected.
-
-        * Determines the problem type. Based on the number of distinct values in the label column, Data Wrangler determines if this is a regression or classification problem type. Data Wrangler sets a categorical threshold to 100. If there are more than 100 distinct values in the label column, Data Wrangler classifies it as a regression problem; otherwise, it is classified as a classification problem.
-
-        * Pre-process features and label data for training. The algorithm used requires encoding features to vector type and encoding labels to double type.
-
-        * Trains a random forest algorithm with 70% of data. Spark’s RandomForestRegressor is used to train a model for regression problems. The RandomForestClassifier is used to train a model for classification problems.
-
-        * Evaluates a random forest model with the remaining 30% of data. Data Wrangler evaluates classification models using an F1 score and evaluates regression models using an MSE score.
-        
-        * Calculates feature importance for each feature using the Gini importance method.
+            * Next, we will create a Quick Model using the raw features. Use the Quick Model visualization to quickly evaluate your data and produce importance scores for each feature. A feature importance score indicates how useful a feature is at predicting a target label. The feature importance score is between [0, 1] and a higher number indicates that the feature is more important to the whole dataset. On the top of the quick model chart, there is a model score. A classification problem shows an F1 score. A regression problem has a mean squared error (MSE) score.<br><br>When you create a quick model chart, you select a dataset you want evaluated, and a target label against which you want feature importance to be compared. Data Wrangler does the following:<br><br>
+            > Infers the data types for the target label and each feature in the dataset selected.
+            > Determines the problem type. Based on the number of distinct values in the label column, Data Wrangler determines if this is a regression or classification problem type. Data Wrangler sets a categorical threshold to 100. If there are more than 100 distinct values in the label column, Data Wrangler classifies it as a regression problem; otherwise, it is classified as a classification problem.
+            > Pre-process features and label data for training. The algorithm used requires encoding features to vector type and encoding labels to double type.
+            > Trains a random forest algorithm with 70% of data. Spark’s RandomForestRegressor is used to train a model for regression problems. The RandomForestClassifier is used to train a model for classification problems.
+            > Evaluates a random forest model with the remaining 30% of data. Data Wrangler evaluates classification models using an F1 score and evaluates regression models using an MSE score.
+            >Calculates feature importance for each feature using the Gini importance method.
  
-                <p align="center"><img width="750" height="500" src="./img/dw/quick-model.png"></p>
+             <p align="center"><img width="750" height="500" src="./img/dw/quick-model.png"></p>
             
             * foo bar 
                 <p align="center"><img width="750" height="500" src="./img/dw/feature-attribution.png"></p>
